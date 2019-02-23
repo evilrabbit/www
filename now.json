@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "www",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/next"
+    }
+  ]
+}
