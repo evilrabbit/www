@@ -1,9 +1,16 @@
-import Link from "next/link";
+import Head from 'next/head'
 import Header from "../components/header";
 import Image from "../components/image";
+import Link from "next/link";
 
 export default () => (
   <main>
+    <Head>
+      <title>Evil Rabbit</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link rel="shortcut icon" href="/static/favicon.png"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    </Head>
     <Header />
     <section className="intro">
       <h1>Hi, I'm <span className="line-through"><b>Nicolás Garro</b>, a.k.a</span> <b>Evil Rabbit.</b></h1>
@@ -18,6 +25,8 @@ export default () => (
         height={2102/2.25}
         margin={0}
       />
+    </section>
+    <section className="now-desktop">
     </section>
     <style global jsx>{`
       ::selection {
