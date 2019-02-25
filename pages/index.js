@@ -15,6 +15,7 @@ export default () => (
     <section className="intro">
       <h1>Hi, I'm <span className="line-through"><b>Nicolás Garro</b>, a.k.a</span> <b>Evil Rabbit.</b></h1>
       <h3>Head of Design at <b>ZEIT</b></h3>
+      <div className="line"></div>
     </section>
     <section className="project">
       <div className="zeit">
@@ -109,6 +110,12 @@ export default () => (
       .intro {
         max-width: 980px;
         padding: 0 20px;
+      }
+      .line {
+        border-left: 1px solid #000;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 100px;
       }
       .line-through {
         text-decoration:line-through;
