@@ -60,7 +60,7 @@ export default () => (
         </div>
       </div>
     </section>
-    <section className="now-desktop">
+    <section>
     </section>
     <style jsx>{`
       a {
@@ -114,6 +114,7 @@ export default () => (
         text-decoration:line-through;
       }
       .now-desktop {
+        background: #fafafa;
         display: flex;
         justify-content: center;
         max-width: 100%;
