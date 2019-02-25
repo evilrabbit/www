@@ -62,6 +62,21 @@ export default () => (
           />
         </div>
       </div>
+      <div className="hyper">
+        <div className="wrapper">
+          <div className="meta">
+            <h4>HYPER</h4>
+            <h2><b>Terminal</b></h2>
+            <Link href="https://hyper.is"><a target="_blank">Get App</a></Link>
+          </div>
+          <Image
+            src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551077906/www/works/zeit/hyper.png`}
+            width={2172/2}
+            height={1822/2}
+            margin={0}
+          />
+        </div>
+      </div>
     </section>
     <section>
     </section>
@@ -114,6 +129,15 @@ export default () => (
       h4 {
         margin: 0;
       }
+      .hyper {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        padding-bottom: 100px;
+        padding-top: 150px;
+        text-align: center;
+        border-bottom: 1px solid #eaeaea;
+      }
       .intro {
         max-width: 980px;
         padding: 0 20px;
@@ -131,7 +155,7 @@ export default () => (
         animation: fadein 2s;
       }
       .meta {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
       }
       .now-desktop {
         background: #fafafa;
