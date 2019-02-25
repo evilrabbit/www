@@ -27,12 +27,15 @@ export default () => (
     <div className="theme">
       <p>Dark</p>
     </div>
-    <style global jsx>{`
+    <style jsx>{`
       a {
         color: #999;
         margin-right: 20px;
         text-decoration: none;
         transition: color .2s ease;
+      }
+      a:last-child {
+        margin-right: 0;
       }
       a :hover {
         color: #000;

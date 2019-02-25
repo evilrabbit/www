@@ -16,29 +16,79 @@ export default () => (
       <h1>Hi, I'm <span className="line-through"><b>Nicolás Garro</b>, a.k.a</span> <b>Evil Rabbit.</b></h1>
       <h3>Head of Design at <b>ZEIT</b></h3>
     </section>
-    <section className="zeit">
-      <h4>ZEIT</h4>
-      <h2><b>Website</b></h2>
-      <Image
-        src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/website.png`}
-        width={2800/2.25}
-        height={2102/2.25}
-        margin={0}
-      />
+    <section className="project">
+      <div className="zeit">
+        <div className="wrapper">
+          <h4>ZEIT</h4>
+          <h2><b>Website</b></h2>
+          <Link href="https://zeit.co"><a target="_blank">zeit.co/</a></Link>
+          <Image
+            src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
+            width={2800/2.25}
+            height={2102/2.25}
+            margin={0}
+          />
+          <div className="extra-info">
+            <Image
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551067289/www/works/zeit/awards.png`}
+              width={680/2}
+              height={200/2}
+              margin={0}
+            />
+            <div className="award">
+              <h2><b>Awarded</b></h2>
+              <p>Official Public Vote Award Certificate of Excellence:
+    Innovation, UX Design and UI Design</p>
+            </div>
+            <div className="date">
+            <p><b>CSS Design Awards</b><br/>FEB 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="now-desktop">
+        <div className="wrapper">
+          <h4>NOW</h4>
+          <h2><b>Desktop App</b></h2>
+          <Link href="https://zeit.co/download"><a target="_blank">zeit.co/download</a></Link>
+          <Image
+            src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
+            width={1376/2}
+            height={1196/2}
+            margin={0}
+          />
+        </div>
+      </div>
     </section>
     <section className="now-desktop">
     </section>
-    <style global jsx>{`
-      ::selection {
-        background: #000;
-        color: #FFF;
+    <style jsx>{`
+      a {
+        color: #999;
+        text-decoration: none;
+        transition: color .2s ease;
       }
-      body {
-        font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-        margin: 0;
+      a :hover {
+        color: #000;
+      }
+      .award  {
+        text-align: left;
+        max-width: 400px;
+        border-right: 1px solid #eaeaea;
+        padding-left: 50px;
+        padding-right: 50px;
       }
       b {
         font-weight: 600;
+      }
+      .extra-info {
+        display: flex;
+        justify-content: center;
+        margin-top: -50px;
+      }
+      .date {
+        text-align: left;
+        padding-left: 50px;
       }
       h1 {
         font-size: 6.250em;
@@ -47,7 +97,7 @@ export default () => (
       }
       h2 {
         font-size: 3.375em;
-        margin: 0;
+        margin: 0 0 10px 0;
       }
       h3 {
         font-size: 1.625em;
@@ -58,9 +108,22 @@ export default () => (
       }
       .intro {
         max-width: 980px;
+        padding: 0 20px;
       }
       .line-through {
         text-decoration:line-through;
+      }
+      .now-desktop {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        padding-bottom: 100px;
+        padding-top: 150px;
+        text-align: center;
+        border-bottom: 1px solid #eaeaea;
+      }
+      .project {
+        height: auto;
       }
       section {
         display: flex;
@@ -69,9 +132,26 @@ export default () => (
         height: 100vh;
         margin: auto;
       }
+      .wrapper {
+        max-width: 1100px;
+      }
       .zeit {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        padding-bottom: 150px;
         text-align: center;
-        max-width: 980px;
+        border-bottom: 1px solid #eaeaea;
+      }
+    `}</style>
+    <style global jsx>{`
+      ::selection {
+        background: #000;
+        color: #FFF;
+      }
+      body {
+        font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        margin: 0;
       }
     `}</style>
   </main>

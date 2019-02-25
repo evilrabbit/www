@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { SimpleImg } from 'react-simple-img'
 
-const columnWidth = 980
+const columnWidth = 1100
 
 function Image({ width, height, captionSpacing, caption, src }) {
   return (
