@@ -64,6 +64,10 @@ export default () => (
     <section>
     </section>
     <style jsx>{`
+      @keyframes fadein {
+  			from { opacity: 0; }
+  			to   { opacity: 1; }
+  		}
       a {
         color: #999;
         text-decoration: none;
@@ -119,6 +123,9 @@ export default () => (
       }
       .line-through {
         text-decoration:line-through;
+      }
+      main {
+        animation: fadein 2s;
       }
       .now-desktop {
         background: #fafafa;
