@@ -80,8 +80,6 @@ export default () => (
         </div>
       </div>
     </section>
-    <section>
-    </section>
     <style jsx>{`
       @keyframes fadein {
   			from { opacity: 0; }
@@ -216,11 +214,15 @@ export default () => (
           width: 250px;
           margin: 0 auto;
         }
+        .hyper {
+          padding-bottom: 50px;
+          padding-top: 75px;
+        }
         .intro {
           margin-top: 100px;
         }
         .now-desktop {
-          padding-bottom: 50px;
+          padding-bottom: 0;
           padding-top: 75px;
         }
         .line {
