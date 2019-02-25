@@ -207,9 +207,6 @@ export default () => (
         .extra-info {
           flex-direction: column;
         }
-        h1 {
-          font-size: 5.250em;
-        }
         .image {
           width: 250px;
           margin: 0 auto;
@@ -238,6 +235,14 @@ export default () => (
       @media screen and (max-width: 992px) {
         section  {
           height: auto;
+        }
+      }
+      @media screen and (max-width: 576px) {
+        h1 {
+          font-size: 22vw;
+        }
+        .intro {
+          margin-top: 50px;
         }
       }
     `}</style>
