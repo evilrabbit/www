@@ -25,8 +25,8 @@ export default () => (
           <Link href="https://zeit.co"><a target="_blank">zeit.co/</a></Link>
           <Image
             src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
-            width={2800/2.5}
-            height={2102/2.5}
+            width={2800/2.25}
+            height={2102/2.25}
             margin={0}
           />
           <div className="extra-info">
@@ -156,7 +156,7 @@ export default () => (
         max-width: 100%;
         padding-bottom: 150px;
         text-align: center;
-        border-bottom: 1px solid #eaeaea;
+        border-bottom: 1px solid #EAEAEA;
       }
     `}</style>
     <style global jsx>{`

@@ -46,22 +46,22 @@ export default () => (
         margin: 0;
       }
       header {
-        background-color:rgba(255, 255, 255, 0.9);
+        background: #FFF;
         max-width: 100%;
         position: sticky;
         top: 0;
         z-index: 1;
       }
       .wrapper {
-        align-items: center;  
+        align-items: center;
         display: flex;
         justify-content: space-between;
         margin: auto;
         max-width: 980px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         padding-left: 30px;
         padding-right: 30px;
-        padding-top: 30px;
+        padding-top: 20px;
       }
     `}</style>
   </header>
