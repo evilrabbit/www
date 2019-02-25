@@ -22,7 +22,7 @@ export default () => (
         <div className="wrapper">
           <h4>ZEIT</h4>
           <h2><b>Website</b></h2>
-          <Link href="https://zeit.co"><a target="_blank">zeit.co/</a></Link>
+          <Link href="https://zeit.co"><a target="_blank">View Site</a></Link>
           <Image
             src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
             width={2800/2.25}
@@ -51,8 +51,8 @@ export default () => (
         <div className="wrapper">
           <div className="meta">
             <h4>NOW</h4>
-            <h2><b>Desktop App</b></h2>
-            <Link href="https://zeit.co/download"><a target="_blank">zeit.co/download</a></Link>
+            <h2><b>Desktop</b></h2>
+            <Link href="https://zeit.co/download"><a target="_blank">Get App</a></Link>
           </div>
           <Image
             src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
@@ -71,12 +71,13 @@ export default () => (
   			to   { opacity: 1; }
   		}
       a {
-        color: #999;
+        color: #0076FF;
         text-decoration: none;
-        transition: color .2s ease;
+        border-bottom: 1px solid transparent;
+        transition: border .2s ease;
       }
       a :hover {
-        color: #000;
+        border-bottom: 1px solid #0076FF;
       }
       .award  {
         text-align: left;
@@ -141,6 +142,10 @@ export default () => (
         padding-top: 150px;
         text-align: center;
         border-bottom: 1px solid #eaeaea;
+      }
+      p {
+        font-size: 0.875em;
+        line-height: 1.500em;
       }
       .project {
         height: auto;
