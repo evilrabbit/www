@@ -49,9 +49,11 @@ export default () => (
       </div>
       <div className="now-desktop">
         <div className="wrapper">
-          <h4>NOW</h4>
-          <h2><b>Desktop App</b></h2>
-          <Link href="https://zeit.co/download"><a target="_blank">zeit.co/download</a></Link>
+          <div className="meta">
+            <h4>NOW</h4>
+            <h2><b>Desktop App</b></h2>
+            <Link href="https://zeit.co/download"><a target="_blank">zeit.co/download</a></Link>
+          </div>
           <Image
             src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
             width={1376/2}
@@ -126,6 +128,9 @@ export default () => (
       }
       main {
         animation: fadein 2s;
+      }
+      .meta {
+        margin-bottom: 50px;
       }
       .now-desktop {
         background: #fafafa;
