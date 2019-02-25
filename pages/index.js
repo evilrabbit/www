@@ -24,8 +24,8 @@ export default () => (
           <Link href="https://zeit.co"><a target="_blank">zeit.co/</a></Link>
           <Image
             src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
-            width={2800/2.25}
-            height={2102/2.25}
+            width={2800/2.5}
+            height={2102/2.5}
             margin={0}
           />
           <div className="extra-info">
@@ -151,7 +151,7 @@ export default () => (
         color: #FFF;
       }
       body {
-        font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
         margin: 0;
       }
     `}</style>
