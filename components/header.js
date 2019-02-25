@@ -9,21 +9,9 @@ export default () => (
   </svg>
       </div>
       <div className="navigation">
-        <Link href="#">
-          <a>About</a>
-        </Link>
-        <Link href="#">
-          <a>Works</a>
-        </Link>
-        <Link href="#">
-          <a>Twitter</a>
-        </Link>
-        <Link href="#">
-          <a>GitHub</a>
-        </Link>
-        <Link href="#">
-          <a>Dribbble</a>
-        </Link>
+        <Link href="https://twitter.com/evilrabbit_"><a target="_blank">Twitter</a></Link>
+        <Link href="https://github.com/evilrabbit"><a target="_blank">GitHub</a></Link>
+        <Link href="https://dribbble.com/evilrabbit"><a target="_blank">Dribbble</a></Link>
       </div>
       <div className="theme">
         <p>Dark</p>
