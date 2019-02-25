@@ -30,19 +30,21 @@ export default () => (
             margin={0}
           />
           <div className="extra-info">
-            <Image
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551067289/www/works/zeit/awards.png`}
-              width={680/2}
-              height={200/2}
-              margin={0}
-            />
+            <div className="image">
+              <Image
+                src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551067289/www/works/zeit/awards.png`}
+                width={680/2}
+                height={200/2}
+                margin={0}
+              />
+            </div>
             <div className="award">
               <h2><b>Awarded</b></h2>
               <p>Official Public Vote Award Certificate of Excellence:
     Innovation, UX Design and UI Design</p>
             </div>
             <div className="date">
-            <p><b>CSS Design Awards</b><br/>FEB 2019</p>
+            <p>FEB 2019</p>
             </div>
           </div>
         </div>
@@ -158,7 +160,7 @@ export default () => (
         margin-bottom: 30px;
       }
       .now-desktop {
-        background: #fafafa;
+        background: #FAFBFC;
         display: flex;
         justify-content: center;
         max-width: 100%;
@@ -182,7 +184,7 @@ export default () => (
         margin: auto;
       }
       .wrapper {
-        max-width: 1100px;
+        max-width: 980px;
       }
       .zeit {
         display: flex;
@@ -191,6 +193,50 @@ export default () => (
         padding-bottom: 150px;
         text-align: center;
         border-bottom: 1px solid #EAEAEA;
+      }
+      @media screen and (max-width: 1200px) {
+        .award  {
+          border-right: none;
+          padding-left: 20px;
+          padding-right: 20px;
+          text-align: center;
+          margin: auto;
+        }
+        .date {
+          text-align: center;
+          padding-left: 0;
+        }
+        .extra-info {
+          flex-direction: column;
+        }
+        h1 {
+          font-size: 5.250em;
+        }
+        .image {
+          width: 250px;
+          margin: 0 auto;
+        }
+        .intro {
+          margin-top: 100px;
+        }
+        .now-desktop {
+          padding-bottom: 50px;
+          padding-top: 75px;
+        }
+        .line {
+          margin-bottom: 100px;
+        }
+        .wrapper {
+          width: 100vw;
+        }
+        .zeit {
+          padding-bottom: 50px;
+        }
+      }
+      @media screen and (max-width: 992px) {
+        section  {
+          height: auto;
+        }
       }
     `}</style>
     <style global jsx>{`

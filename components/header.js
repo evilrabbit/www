@@ -59,9 +59,14 @@ export default () => (
         margin: auto;
         max-width: 980px;
         padding-bottom: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 20px;
+      }
+      @media screen and (max-width: 992px) {
+        .navigation {
+          display: none;
+        }
       }
     `}</style>
   </header>

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { SimpleImg } from 'react-simple-img'
 
-const columnWidth = 1100
+const columnWidth = 980
 
 function Image({ width, height, captionSpacing, caption, src }) {
   return (
@@ -15,7 +15,7 @@ function Image({ width, height, captionSpacing, caption, src }) {
       )}
       <style jsx>{`
         margin: 40px 0;
-        @media (min-width: 992px) {
+        @media (min-width: 1200px) {
           figure {
             width: ${width}px;
             height: ${height}px;
