@@ -14,7 +14,7 @@ export default () => (
         <Link href="https://dribbble.com/evilrabbit"><a target="_blank">Dribbble</a></Link>
       </div>
       <div className="theme">
-        <p>Dark</p>
+        <p>2019</p>
       </div>
     </div>
     <style jsx>{`
@@ -31,7 +31,9 @@ export default () => (
         color: #000;
       }
       p {
+        color: #999;
         margin: 0;
+        font-size: 0.750em;
       }
       header {
         background: #FFF;
