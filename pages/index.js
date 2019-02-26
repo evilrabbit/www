@@ -312,13 +312,18 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
           margin: 0 auto;
         }
         .hyper {
-          padding-bottom: 50px;
+          padding-bottom: 0;
           padding-top: 75px;
         }
+
         .intro {
           margin-top: 100px;
         }
         .now-desktop {
+          padding-bottom: 0;
+          padding-top: 75px;
+        }
+        .sharelock {
           padding-bottom: 0;
           padding-top: 75px;
         }
