@@ -125,6 +125,36 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
           </div>
         </div>
       </div>
+      <div className="sharelock">
+        <div className="wrapper">
+          <div className="meta">
+            <h4>SHARELOCK</h4>
+            <h2><b>Product</b></h2>
+            <Link href="https://sharelock.io/"><a target="_blank">Try It Now</a></Link>
+          </div>
+          <Image
+            src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551213036/www/works/auth0/desktop-app.png`}
+            width={1240/2}
+            height={876/2}
+            margin={0}
+          />
+          <div className="electron">
+            <div className="image">
+              <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                <circle cx="50" cy="50" r="50" fill="#FF6600"/>
+                <path d="M52.9863 71V55.417L66.4072 32.9521H59.8682L50.165 49.748H49.9805L40.2773 32.9521H33.6855L47.0801 55.417V71H52.9863Z" fill="white"/>
+              </svg>
+            </div>
+            <div className="award">
+              <h3><b>HN Front Page</b></h3>
+              <p>The app was featured on the main page of Hacker News.</p>
+            </div>
+            <div className="date">
+            <p>FEB 2015</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <style jsx>{`
       @keyframes fadein {
@@ -184,7 +214,16 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
         display: flex;
         justify-content: center;
         max-width: 100%;
-        padding-bottom: 100px;
+        padding-bottom: 150px;
+        padding-top: 150px;
+        text-align: center;
+        border-bottom: 1px solid #eaeaea;
+      }
+      .sharelock {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        padding-bottom: 150px;
         padding-top: 150px;
         text-align: center;
         border-bottom: 1px solid #eaeaea;
@@ -213,7 +252,7 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
         display: flex;
         justify-content: center;
         max-width: 100%;
-        padding-bottom: 100px;
+        padding-bottom: 150px;
         padding-top: 150px;
         text-align: center;
         border-bottom: 1px solid #eaeaea;
