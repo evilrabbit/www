@@ -233,7 +233,7 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
         padding: 0 30px;
       }
       .line {
-        border-left: 1px solid #000;
+        border-left: 1px solid transparent;
         height: 100px;
         margin: 0 auto;
         margin-top: 100px;
