@@ -338,6 +338,14 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
         }
       }
       @media screen and (max-width: 992px) {
+        .line {
+          display: none;
+        }
+        .intro {
+          border-bottom: 1px solid #EAEAEA;
+          margin-bottom: 150px;
+          padding-bottom: 150px;
+        }
         section  {
           height: auto;
         }
@@ -347,7 +355,10 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
           font-size: 22vw;
         }
         .intro {
+          margin-bottom: 100px;
           margin-top: 50px;
+          margin-bottom: 100px;
+          padding-bottom: 100px;
         }
       }
     `}</style>
