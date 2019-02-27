@@ -146,8 +146,8 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
               </svg>
             </div>
             <div className="award">
-              <h3><b>HN Front Page</b></h3>
-              <p>The app was featured on the main page of Hacker News.</p>
+              <h3><b>Featured</b></h3>
+              <p>The app was featured on <Link href="https://news.ycombinator.com/"><a target="_blank">Hacker News</a></Link> front page.</p>
             </div>
             <div className="date">
             <p>FEB 2015</p>
