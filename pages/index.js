@@ -13,10 +13,9 @@ export default () => (
     </Head>
     <Header />
     <section className="intro">
-      <div className="identity">
-        <h1>Hi, I'm <span className="line-through"><b>Nicolás Garro</b>, a.k.a</span> <b>Evil Rabbit.</b></h1>
-        <h3>Head of Design at <b>ZEIT</b></h3>
-      </div>
+      <h1>Hi, I'm <span className="line-through"><b>Nicolás Garro</b>, a.k.a</span> <b>Evil Rabbit.</b></h1>
+      <h3>Head of Design at <b>ZEIT</b></h3>
+      <div className="line"></div>
     </section>
     <section className="project">
       <div className="zeit">
@@ -220,12 +219,24 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
         text-align: center;
         border-bottom: 1px solid #eaeaea;
       }
-      .identity {
-        margin-top: -90px;
+      .sharelock {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        padding-bottom: 150px;
+        padding-top: 150px;
+        text-align: center;
+        border-bottom: 1px solid #eaeaea;
       }
       .intro {
         max-width: 980px;
         padding: 0 30px;
+      }
+      .line {
+        border-left: 1px solid #000;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 100px;
       }
       .line-through {
         text-decoration:line-through;
@@ -257,17 +268,8 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 95vh;
+        height: 100vh;
         margin: auto;
-      }
-      .sharelock {
-        display: flex;
-        justify-content: center;
-        max-width: 100%;
-        padding-bottom: 150px;
-        padding-top: 150px;
-        text-align: center;
-        border-bottom: 1px solid #eaeaea;
       }
       .wrapper {
         max-width: 980px;
@@ -313,6 +315,10 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
           padding-bottom: 0;
           padding-top: 75px;
         }
+
+        .intro {
+          margin-top: 100px;
+        }
         .now-desktop {
           padding-bottom: 0;
           padding-top: 75px;
@@ -321,6 +327,9 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
           padding-bottom: 0;
           padding-top: 75px;
         }
+        .line {
+          margin-bottom: 100px;
+        }
         .wrapper {
           width: 100vw;
         }
@@ -328,9 +337,17 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
           padding-bottom: 50px;
         }
       }
+      @media screen and (max-width: 992px) {
+        section  {
+          height: auto;
+        }
+      }
       @media screen and (max-width: 576px) {
         h1 {
           font-size: 22vw;
+        }
+        .intro {
+          margin-top: 50px;
         }
       }
     `}</style>

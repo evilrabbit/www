@@ -19,16 +19,17 @@ export default () => (
     </div>
     <style jsx>{`
       a {
-        color: #999;
+        color: #000;
         margin-right: 20px;
         text-decoration: none;
-        transition: color .2s ease;
+        border-bottom: 1px solid transparent;
+        transition: border .2s ease;
       }
       a:last-child {
         margin-right: 0;
       }
       a :hover {
-        color: #000;
+        border-bottom: 1px solid #000;
       }
       p {
         color: #999;
