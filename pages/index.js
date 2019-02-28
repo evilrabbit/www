@@ -248,6 +248,7 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
         border-bottom: 1px solid #eaeaea;
       }
       .sharelock {
+        background: #FAFBFC;
         display: flex;
         justify-content: center;
         max-width: 100%;
