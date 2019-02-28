@@ -212,7 +212,7 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
         display: flex;
         justify-content: center;
         max-width: 100%;
-        padding-bottom: 150px;
+        padding-bottom: 50px;
         padding-top: 150px;
         text-align: center;
         border-bottom: 1px solid #eaeaea;
