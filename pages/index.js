@@ -163,9 +163,9 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
             <Link href="https://auth0.com/multifactor-authentication"><a target="_blank">Try It Now</a></Link>
           </div>
           <Image
-            src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551335203/www/works/auth0/guardian.png`}
-            width={1518/2}
-            height={1662/2}
+            src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551337683/www/works/auth0/auth0-guardian.png`}
+            width={1536/2}
+            height={1668/2}
             margin={0}
           />
         </div>
