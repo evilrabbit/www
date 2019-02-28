@@ -336,8 +336,15 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
         .electron .date {
           margin-bottom: 75px;
         }
+        .guardian {
+          padding-bottom: 0;
+          padding-top: 75px;
+        }
         .hackernews {
           flex-direction: column;
+        }
+        .hackernews .date {
+          margin-bottom: 75px;
         }
         .image {
           width: 250px;
