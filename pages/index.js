@@ -133,12 +133,12 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
             <Link href="https://sharelock.io/"><a target="_blank">Try It Now</a></Link>
           </div>
           <Image
-            src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551213036/www/works/auth0/desktop-app.png`}
+            src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551213036/www/works/auth0/sharelock.png`}
             width={1240/2}
             height={876/2}
             margin={0}
           />
-          <div className="electron">
+          <div className="hackernews">
             <div className="image">
               <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
                 <circle cx="50" cy="50" r="50" fill="#FF6600"/>
@@ -153,6 +153,21 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
             <p>FEB 2015</p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="guardian">
+        <div className="wrapper">
+          <div className="meta">
+            <h4>GUARDIAN</h4>
+            <h2><b>Product</b></h2>
+            <Link href="https://auth0.com/multifactor-authentication"><a target="_blank">Try It Now</a></Link>
+          </div>
+          <Image
+            src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551335203/www/works/auth0/guardian.png`}
+            width={1518/2}
+            height={1662/2}
+            margin={0}
+          />
         </div>
       </div>
     </section>
@@ -190,6 +205,19 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
         padding-left: 50px;
       }
       .electron {
+        display: flex;
+        justify-content: center;
+      }
+      .guardian {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        padding-bottom: 150px;
+        padding-top: 150px;
+        text-align: center;
+        border-bottom: 1px solid #eaeaea;
+      }
+      .hackernews {
         display: flex;
         justify-content: center;
       }
@@ -306,6 +334,9 @@ renowned names such as: <Link href="https://code.visualstudio.com/"><a target="_
         }
         .electron .date {
           margin-bottom: 75px;
+        }
+        .hackernews {
+          flex-direction: column;
         }
         .image {
           width: 250px;
