@@ -346,6 +346,10 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
         .hackernews .date {
           margin-bottom: 75px;
         }
+        .hackernews .image {
+          transform: scale(0.75);
+          margin-bottom: 10px;
+        }
         .image {
           width: 250px;
           margin: 0 auto;
