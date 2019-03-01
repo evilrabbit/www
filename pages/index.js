@@ -92,8 +92,8 @@ export default () => (
             <div className="award">
               <h3><b>Featured</b></h3>
               <p>The application was highlighted on <Link href="https://electronjs.org/"><a target="_blank">Electron</a></Link> front page along with other
-well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="_blank">Visual Studio Code</a></Link>, <Link href="https://www.figma.com"><a target="_blank">Figma</a></Link>,
-<Link href="https://www.skype.com"><a target="_blank">Skype</a></Link>, <Link href="https://www.slack.com"><a target="_blank">Slack</a></Link>, <Link href="https://discordapp.com/"><a target="_blank">Discord</a></Link> and many more.</p>
+well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="_blank">Visual Studio Code</a></Link>, <Link href="https://www.figma.com"><a target="_blank">Figma</a></Link>,{` `}
+<Link href="https://www.skype.com"><a target="_blank">Skype</a></Link>, <Link href="https://www.slack.com"><a target="_blank">Slack</a></Link>, <Link href="https://discordapp.com/"><a target="_blank">Discord</a></Link>, and many more.</p>
             </div>
             <div className="date">
             <p>Since 2017</p>
@@ -148,8 +148,8 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
             <div className="award">
               <h3><b>Featured</b></h3>
               <p>The application was highlighted on <Link href="https://electronjs.org/"><a target="_blank">Electron</a></Link> front page along with other
-well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="_blank">Visual Studio Code</a></Link>, <Link href="https://www.figma.com"><a target="_blank">Figma</a></Link>,
-<Link href="https://www.skype.com"><a target="_blank">Skype</a></Link>, <Link href="https://www.slack.com"><a target="_blank">Slack</a></Link>, <Link href="https://discordapp.com/"><a target="_blank">Discord</a></Link> and many more.</p>
+well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="_blank">Visual Studio Code</a></Link>, <Link href="https://www.figma.com"><a target="_blank">Figma</a></Link>,{` `}
+<Link href="https://www.skype.com"><a target="_blank">Skype</a></Link>, <Link href="https://www.slack.com"><a target="_blank">Slack</a></Link>, <Link href="https://discordapp.com/"><a target="_blank">Discord</a></Link>, and many more.</p>
             </div>
             <div className="date">
             <p>Since 2017</p>
