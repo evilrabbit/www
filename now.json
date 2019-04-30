@@ -6,5 +6,9 @@
       "src": "package.json",
       "use": "@now/next"
     }
+  ],
+  "routes": [
+    { "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "continue": true, "headers": { "cache-control": "immutable,max-age=31536000" } },
+    { "handle": "filesystem" }
   ]
 }
