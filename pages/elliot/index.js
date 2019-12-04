@@ -6,7 +6,7 @@ import Link from "next/link";
 export default () => (
   <main>
     <Head>
-      <title>Elliot</title>
+      <title>Evil Rabbit + Elliot</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="shortcut icon" href="/static/favicon.png"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
