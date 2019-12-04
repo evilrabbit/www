@@ -14,7 +14,6 @@ function Image({ width, height, captionSpacing, caption, src }) {
         </p>
       )}
       <style jsx>{`
-        margin: 40px 0;
         @media (min-width: 1200px) {
           figure {
             width: ${width}px;
