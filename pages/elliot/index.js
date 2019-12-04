@@ -44,7 +44,7 @@ export default () => (
     <h3><Link href="https://elliot.store/"><a target="_blank">Elliot</a></Link> is a no-code ecommerce platform that allows anyone to <b>instantly setup, sell, and ship</b> to 130+ countries with no technical knowledge required. <Link href="https://zeit.co/"><a target="_blank">ZEIT</a></Link> is teaming up with Elliot to provide the best hosting experience to their customers who want to modify their store through an easy-to-modify template package. ZEIT is also working with Elliot to provide a better experience to their no-code customers, so that stores are instantly accessible from anywhere in the world through a world-class CDN.
     <br />
     <br />
-    Elliot ask me to help choose a winner for their light-mode competition, and I am happy to select <Link href="https://twitter.com/iakshatmittal"><a target="_blank">Akshat Mittal</a></Link> for creating a beautiful, on-brand light theme.</h3>
+    Elliot asked me to help choose a winner for their light-mode competition, and I am happy to select <Link href="https://twitter.com/iakshatmittal"><a target="_blank">Akshat Mittal</a></Link> for creating a beautiful, on-brand light theme.</h3>
     </section>
     <section className="project">
       <div className="winner">
