@@ -41,9 +41,11 @@ export default () => (
       <div className="line"></div>
     </section>
     <section className="intro">
-    <h3><Link href="https://elliot.store/"><a target="_blank">Elliot</a></Link> is a no-code ecommerce platform that allows anyone to <b>instantly setup, sell, and ship</b> to 130+ countries with no technical knowledge required. <Link href="https://zeit.co/"><a target="_blank">ZEIT</a></Link> is teaming up with Elliot to provide the best hosting experience to their customers who want to modify their store through an easy-to-modify template package. ZEIT is also working with Elliot to provide a better experience to their no-code customers, so that stores are instantly accessible from anywhere in the world through a world-class CDN.
+    <h3><Link href="https://elliot.store/"><a target="_blank">Elliot</a></Link> is a no-code ecommerce platform that allows anyone to <b>instantly setup, sell, and ship</b> to 130+ countries with no technical knowledge required. <Link href="https://zeit.co/"><a target="_blank">ZEIT</a></Link> is teaming up with Elliot to provide the best hosting experience to their customers who want to modify their store through an easy-to-modify template package. 
     <br />
     <br />
+    ZEIT is also working with Elliot to provide a better experience to their no-code customers, so that stores are instantly accessible from anywhere in the world through a world-class CDN.
+
     Elliot asked me to help choose a winner for their light-mode competition, and I am happy to select <Link href="https://twitter.com/iakshatmittal"><a target="_blank">Akshat Mittal</a></Link> for creating a beautiful, on-brand light theme.</h3>
     </section>
     <section className="project">
@@ -125,6 +127,42 @@ export default () => (
               <div className="thumb twelve"></div>
               <h4>Eduardo Mejía</h4>
             </div>
+
+            <div className="submission">
+              <div className="thumb thirteen"></div>
+              <h4>Adrià Compte</h4>
+            </div>
+
+            <div className="submission">
+              <div className="thumb fourteen"></div>
+              <h4>Radek Kozieł</h4>
+            </div>
+
+            <div className="submission">
+              <div className="thumb fifteen"></div>
+              <h4>DevNikki</h4>
+            </div>
+
+            <div className="submission">
+              <div className="thumb sixteen"></div>
+              <h4>Ced</h4>
+            </div>
+
+            <div className="submission">
+              <div className="thumb seventeen"></div>
+              <h4>Eduardo Rodríguez</h4>
+            </div>
+
+            <div className="submission">
+              <div className="thumb eighteen"></div>
+              <h4>Charles Yeo</h4>
+            </div>
+
+            <div className="submission">
+              <div className="thumb nineteen"></div>
+              <h4>Aldo the 🤡</h4>
+            </div>
+
           </div>
         </div>
       </div>
@@ -299,6 +337,48 @@ export default () => (
 
       .submission .twelve {
         background-image: url("https://res.cloudinary.com/evilrabbit/image/upload/v1575438246/www/contests/elliot/Eduardo-Mejia.png");
+        background-repeat: no-repeat;
+        background-size: 1000px;
+      }
+
+      .submission .thirteen {
+        background-image: url("https://res.cloudinary.com/evilrabbit/image/upload/v1575484353/www/contests/elliot/Adria-Compte.png");
+        background-repeat: no-repeat;
+        background-size: 1000px;
+      }
+
+      .submission .fourteen {
+        background-image: url("https://res.cloudinary.com/evilrabbit/image/upload/v1575484664/www/contests/elliot/Radek-Kozie%C5%82.png");
+        background-repeat: no-repeat;
+        background-size: 1400px;
+      }
+
+      .submission .fifteen {
+        background-image: url("https://res.cloudinary.com/evilrabbit/image/upload/v1575484770/www/contests/elliot/DevNikki.jpg");
+        background-repeat: no-repeat;
+        background-size: 1200px;
+      }
+
+      .submission .sixteen {
+        background-image: url("https://res.cloudinary.com/evilrabbit/image/upload/v1575484770/www/contests/elliot/ced.jpg");
+        background-repeat: no-repeat;
+        background-size: 1200px;
+      }
+
+      .submission .seventeen {
+        background-image: url("https://res.cloudinary.com/evilrabbit/image/upload/v1575484770/www/contests/elliot/ed-rod.png");
+        background-repeat: no-repeat;
+        background-size: 1600px;
+      }
+
+      .submission .eighteen {
+        background-image: url("https://res.cloudinary.com/evilrabbit/image/upload/v1575485221/www/contests/elliot/Charles-Yeo.png");
+        background-repeat: no-repeat;
+        background-size: 1000px;
+      }
+
+      .submission .nineteen {
+        background-image: url("https://res.cloudinary.com/evilrabbit/image/upload/v1575485360/www/contests/elliot/Phunmbi.jpg");
         background-repeat: no-repeat;
         background-size: 1000px;
       }
