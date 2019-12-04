@@ -14,14 +14,14 @@ export default () => (
   	<meta name="twitter:card" content="summary_large_image" />
   	<meta name="twitter:site" content="@evilrabbit_" />
   	<meta name="twitter:creator" content="@evilrabbit_" />
-  	<meta name="twitter:title" content="Evil Rabbit" />
-  	<meta name="twitter:description" content="Head of Design at ZEIT" />
-  	<meta name="twitter:image" content="https://dev.evilrabb.it/static/og-image.png" />
-  	<meta property="og:title" content="Evil Rabbit" />
+  	<meta name="twitter:title" content="Evil Rabbit + Elliot" />
+  	<meta name="twitter:description" content="Elliot is a no-code ecommerce platform that allows anyone to instantly setup, sell, and ship to 130+ countries with no technical knowledge required." />
+  	<meta name="twitter:image" content="https://evilrabb.it/static/elliot-og-image.png" />
+  	<meta property="og:title" content="Evil Rabbit + Elliot" />
   	<meta property="og:type" content="website" />
-  	<meta property="og:description" content="Head of Design at ZEIT" />
-  	<meta property="og:url" content="https://dev.evilrabb.it" />
-  	<meta property="og:image" content="https://dev.evilrabb.it/static/og-image.png" />
+  	<meta property="og:description" content="Elliot is a no-code ecommerce platform that allows anyone to instantly setup, sell, and ship to 130+ countries with no technical knowledge required." />
+  	<meta property="og:url" content="https://evilrabb.it" />
+  	<meta property="og:image" content="https://evilrabb.it/static/elliot-og-image.png" />
   	<meta name="apple-mobile-web-app-capable" content="yes" />
   	<meta name="apple-mobile-web-app-status-bar-style" content="white" />
     </Head>
@@ -37,7 +37,12 @@ export default () => (
           />
         </div>
       </div>
+      <h1>Working with Elliot</h1>
       <div className="line"></div>
+    </section>
+    <section className="intro">
+    <h3><Link href="https://elliot.store/"><a target="_blank">Elliot</a></Link> is a no-code ecommerce platform that allows anyone to <b>instantly setup, sell, and ship</b> to 130+ countries with no technical knowledge required. <Link href="https://zeit.co/"><a target="_blank">ZEIT</a></Link> is teaming up with Elliot to provide the best hosting experience to their customers who want to modify their store through an easy-to-modify template package. ZEIT is also working with Elliot to provide a better experience to their no-code customers so that their stores are instantly accessible from anywhere in the world, through a world-class CDN, to match where you can sell.
+Elliot paired up with me to choose a winner for their light-mode competition and I was happy to select <Link href="https://twitter.com/iakshatmittal"><a target="_blank">Akshat Mittal</a></Link> for creating an on-brand beautiful light theme.</h3>
     </section>
     <section className="project">
       <div className="winner">
@@ -138,13 +143,6 @@ export default () => (
       a :hover {
         border-bottom: 1px solid #0076FF;
       }
-      .award  {
-        text-align: left;
-        max-width: 400px;
-        border-right: 1px solid #eaeaea;
-        padding-left: 50px;
-        padding-right: 50px;
-      }
       b {
         font-weight: 600;
       }
@@ -158,7 +156,7 @@ export default () => (
       }
       h1 {
         font-size: 6.250em;
-        font-weight: 300;
+        font-weight: 700;
         margin: 0;
       }
       h2 {
@@ -177,6 +175,13 @@ export default () => (
       .intro {
         max-width: 980px;
         padding: 0 30px;
+      }
+      .intro h1 {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      .intro h3 {
+        text-align: left;
       }
       .line {
         border-left: 1px solid transparent;
@@ -328,15 +333,9 @@ export default () => (
           width: 250px;
           margin: 0 auto;
         }
-        .intro {
-          margin-top: 100px;
-        }
         .submissions {
           padding-bottom: 0;
           padding-top: 75px;
-        }
-        .line {
-          margin-bottom: 100px;
         }
         .winner {
           padding-bottom: 50px;
@@ -360,7 +359,7 @@ export default () => (
       }
       @media screen and (max-width: 576px) {
         h1 {
-          font-size: 22vw;
+          font-size: 16vw;
         }
         .intro {
           margin-bottom: 100px;
