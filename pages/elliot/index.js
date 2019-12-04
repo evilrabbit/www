@@ -41,8 +41,10 @@ export default () => (
       <div className="line"></div>
     </section>
     <section className="intro">
-    <h3><Link href="https://elliot.store/"><a target="_blank">Elliot</a></Link> is a no-code ecommerce platform that allows anyone to <b>instantly setup, sell, and ship</b> to 130+ countries with no technical knowledge required. <Link href="https://zeit.co/"><a target="_blank">ZEIT</a></Link> is teaming up with Elliot to provide the best hosting experience to their customers who want to modify their store through an easy-to-modify template package. ZEIT is also working with Elliot to provide a better experience to their no-code customers so that their stores are instantly accessible from anywhere in the world, through a world-class CDN, to match where you can sell.
-Elliot paired up with me to choose a winner for their light-mode competition and I was happy to select <Link href="https://twitter.com/iakshatmittal"><a target="_blank">Akshat Mittal</a></Link> for creating an on-brand beautiful light theme.</h3>
+    <h3><Link href="https://elliot.store/"><a target="_blank">Elliot</a></Link> is a no-code ecommerce platform that allows anyone to <b>instantly setup, sell, and ship</b> to 130+ countries with no technical knowledge required. <Link href="https://zeit.co/"><a target="_blank">ZEIT</a></Link> is teaming up with Elliot to provide the best hosting experience to their customers who want to modify their store through an easy-to-modify template package. ZEIT is also working with Elliot to provide a better experience to their no-code customers, so that stores are instantly accessible from anywhere in the world through a world-class CDN.
+    <br />
+    <br />
+    Elliot ask me to help choose a winner for their light-mode competition, and I am happy to select <Link href="https://twitter.com/iakshatmittal"><a target="_blank">Akshat Mittal</a></Link> for creating a beautiful, on-brand light theme.</h3>
     </section>
     <section className="project">
       <div className="winner">
@@ -78,7 +80,7 @@ Elliot paired up with me to choose a winner for their light-mode competition and
               <div className="thumb three"></div>
               <h4>Sobbuh</h4>
             </div>
-            
+
             <div className="submission">
               <div className="thumb four"></div>
               <h4>Karan</h4>
@@ -123,12 +125,11 @@ Elliot paired up with me to choose a winner for their light-mode competition and
               <div className="thumb twelve"></div>
               <h4>Eduardo Mejía</h4>
             </div>
-
           </div>
-
         </div>
-      </div> 
+      </div>
     </section>
+
     <style jsx>{`
       @keyframes fadein {
   			from { opacity: 0; }
@@ -165,7 +166,7 @@ Elliot paired up with me to choose a winner for their light-mode competition and
       }
       h3 {
         font-size: 1.625em;
-        line-height: 1.5; 
+        line-height: 1.5;
         font-weight: 300;
         margin: 0;
       }
@@ -334,7 +335,6 @@ Elliot paired up with me to choose a winner for their light-mode competition and
           margin: 0 auto;
         }
         .submissions {
-          padding-bottom: 0;
           padding-top: 75px;
         }
         .winner {
