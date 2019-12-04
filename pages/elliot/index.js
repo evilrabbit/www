@@ -190,7 +190,7 @@ export default () => (
         justify-content: center;
       }
       .elliot-logotype .image {
-        width: 180px;
+        width: 200px;
         height: 180px;
       }
       h1 {
@@ -445,7 +445,7 @@ export default () => (
           margin-bottom: 100px;
           margin-top: 50px;
           margin-bottom: 100px;
-          padding-bottom: 160px;
+          padding-bottom: 100px;
         }
       }
     `}</style>

@@ -11,22 +11,34 @@ export default () => (
   </a></Link>
       </div>
       <div className="credits">
-        Powered by <Link href="https://zeit.co"><a target="_blank"><b>▲ ZEIT</b></a></Link>
+        Powered by <Link href="https://zeit.co"><a target="_blank">
+
+      <div className="zeit-logotype">
+        <svg width="76" height="16" viewBox="0 0 76 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.01831 0L18.0366 16H0L9.01831 0Z" fill="url(#paint0_linear)"/>
+          <path d="M24.3359 13.0284H31.5706V11.7724H26.1402L31.4822 4.14858V3.05188H24.4244V4.30778H29.6779L24.3359 11.9316V13.0284ZM39.1414 13.0284H45.6332V11.7724H40.6096V8.57078H44.9787V7.31488H40.6096V4.30778H45.6332V3.05188H39.1414V13.0284ZM53.4517 13.0284H59.7843V11.7724H57.3609V4.30778H59.7843V3.05188H53.4517V4.30778H55.8927V11.7724H53.4517V13.0284ZM70.2029 13.0284H71.6711V4.30778H75.0674V3.05188H66.8421V4.30778H70.2029V13.0284Z" fill="#333333"/>
+          <defs>
+            <linearGradient id="paint0_linear" x1="20.6918" y1="29.0053" x2="8.85855" y2="14.5831" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white"/>
+            <stop offset="1"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    
+          </a></Link>
       </div>
     </div>
     <style jsx>{`
       a {
         color: #000;
-        margin-right: 20px;
         text-decoration: none;
         border-bottom: 1px solid transparent;
         transition: border .2s ease;
       }
-      a:last-child {
-        margin-right: 0;
-      }
-      a :hover {
-        border-bottom: 1px solid #000;
+      .credits {
+        display: flex;
+        color: #666;
       }
       p {
         color: #999;
@@ -58,6 +70,11 @@ export default () => (
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
+      }
+
+      .zeit-logotype {
+        margin-left: 6px;
+        margin-top: 1px;
       }
       @media screen and (max-width: 992px) {
         .navigation {
