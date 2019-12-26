@@ -14,7 +14,7 @@ export default () => (
         <Link href="https://dribbble.com/evilrabbit"><a target="_blank">Dribbble</a></Link>
       </div>
       <div className="theme">
-        <p>2019</p>
+        <p>2020</p>
       </div>
     </div>
     <style jsx>{`
