@@ -29,13 +29,13 @@ export default () => (
     <Header />
     <section className="intro">
       <h1>Hi, I'm <span className="line-through"><b>Nicolás Garro</b>, a.k.a</span> <b>Evil Rabbit.</b></h1>
-      <h3>Head of Design at <b>Vercel [Formerly ZEIT]</b></h3>
+      <h3>Head of Design at <b>Vercel</b></h3>
       <div className="line"></div>
     </section>
     <section className="project">
       <div className="zeit">
         <div className="wrapper">
-          <h4>Vercel [Formerly ZEIT]</h4>
+          <h4>ZEIT</h4>
           <h2><b>Website</b></h2>
           <Link href="https://zeit.co"><a target="_blank">View Site</a></Link>
           <Image
