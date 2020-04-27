@@ -9,6 +9,7 @@ export default () => (
       <title>Evil Rabbit</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="shortcut icon" href="/static/favicon.png"/>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
       <meta name="theme-color" content="white" />
   	<meta name="twitter:card" content="summary_large_image" />
@@ -28,13 +29,13 @@ export default () => (
     <Header />
     <section className="intro">
       <h1>Hi, I'm <span className="line-through"><b>Nicolás Garro</b>, a.k.a</span> <b>Evil Rabbit.</b></h1>
-      <h3>Head of Design at <b>ZEIT</b></h3>
+      <h3>Head of Design at <b>Vercel [Formerly ZEIT]</b></h3>
       <div className="line"></div>
     </section>
     <section className="project">
       <div className="zeit">
         <div className="wrapper">
-          <h4>ZEIT</h4>
+          <h4>Vercel [Formerly ZEIT]</h4>
           <h2><b>Website</b></h2>
           <Link href="https://zeit.co"><a target="_blank">View Site</a></Link>
           <Image
@@ -254,7 +255,7 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
         justify-content: center;
       }
       h1 {
-        font-size: 6.250em;
+        font-size: 6em;
         font-weight: 300;
         margin: 0;
       }
@@ -450,7 +451,7 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
         color: #FFF;
       }
       body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
         margin: 0;
       }
     `}</style>
