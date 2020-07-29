@@ -16,11 +16,11 @@ export default () => (
   	<meta name="twitter:site" content="@evilrabbit_" />
   	<meta name="twitter:creator" content="@evilrabbit_" />
   	<meta name="twitter:title" content="Evil Rabbit" />
-  	<meta name="twitter:description" content="Head of Design at ZEIT" />
+  	<meta name="twitter:description" content="Head of Design at Vercel" />
   	<meta name="twitter:image" content="https://dev.evilrabb.it/static/og-image.png" />
   	<meta property="og:title" content="Evil Rabbit" />
   	<meta property="og:type" content="website" />
-  	<meta property="og:description" content="Head of Design at ZEIT" />
+  	<meta property="og:description" content="Head of Design at Vercel" />
   	<meta property="og:url" content="https://dev.evilrabb.it" />
   	<meta property="og:image" content="https://dev.evilrabb.it/static/og-image.png" />
   	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -35,9 +35,9 @@ export default () => (
     <section className="project">
       <div className="zeit">
         <div className="wrapper">
-          <h4>ZEIT</h4>
+          <h4>Vercel</h4>
           <h2><b>Website</b></h2>
-          <Link href="https://zeit.co"><a target="_blank">View Site</a></Link>
+          <Link href="https://vercel.com"><a target="_blank">View Site</a></Link>
           <Image
             src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
             width={2800/2.25}
