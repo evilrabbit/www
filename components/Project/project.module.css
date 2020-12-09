@@ -1,0 +1,45 @@
+.project {
+  display: flex;
+
+  justify-content: center;
+
+  border-bottom: 1px solid var(--border-color);
+
+  padding-bottom: 150px;
+
+  max-width: 100%;
+
+  height: auto;
+
+  text-align: center;
+}
+
+.description {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-top: -50px;
+
+  text-align: left;
+}
+
+.content {
+  padding: 0 var(--spacer-48);
+}
+
+.date {
+  border-left: 1px solid var(--border-color);
+
+  padding-left: var(--spacer-28);
+}
+
+@media screen and (max-width: 1200px) {
+  .project {
+    flex-direction: column;
+
+    padding-bottom: 50px;
+  }
+}
