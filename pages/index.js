@@ -43,12 +43,11 @@ const Homepage = () => {
         gsap.delayedCall(0.3, () => (body.style.overflow = "initial"));
       },
       defaults: {
-        ease: "power2",
-        duration: 0.65,
+        ease: "sine",
+        duration: 0.6,
       },
     });
 
-    // tl.current.set("#hero", { perspective: 400 });
     tl.current.set(titleAKAText, { opacity: 0 });
 
     tl.current.to(mainRef.current, {
@@ -80,6 +79,8 @@ const Homepage = () => {
       },
     });
     tl.current.from(headof, {
+      ease: "back.out(1)",
+      duration: 0.5,
       y: 30,
       autoAlpha: 0,
     });
@@ -89,12 +90,14 @@ const Homepage = () => {
         y: -30,
       },
       {
+        ease: "back.out(1)",
+        duration: 0.5,
         autoAlpha: 1,
         y: 0,
       }
     );
 
-    tl.current.timeScale(.8).play();
+    tl.current.timeScale(0.8).play();
   }, [mainRef]);
   return (
     <>
