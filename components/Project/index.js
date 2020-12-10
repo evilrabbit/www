@@ -1,33 +1,60 @@
-import React from 'react';
-import 'keen-slider/keen-slider.min.css';
-import { useKeenSlider } from 'keen-slider/react';
+import React, { useState } from "react";
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
 
-import Link from 'next/link';
+import Link from "next/link";
 
-import styles from './project.module.css';
+import styles from "./project.module.css";
 
 const ArrowLeft = (props) => {
-  const disabeld = props.disabled ? ` ${styles.disabeld}` : '';
+  const disabeld = props.disabled ? ` ${styles.disabeld}` : "";
   return (
-    <svg onClick={props.onClick} className={`${styles.arrow} ${styles.arrow__left} ${disabeld}`} width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 18l-6-6 6-6" stroke="var(--foreground)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <svg
+      onClick={props.onClick}
+      className={`${styles.arrow} ${styles.arrow__left} ${disabeld}`}
+      width="24"
+      height="24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15 18l-6-6 6-6"
+        stroke="var(--foreground)"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
   );
 };
 
 const ArrowRight = (props) => {
-  const disabeld = props.disabled ? ` ${styles.disabeld}` : '';
+  const disabeld = props.disabled ? ` ${styles.disabeld}` : "";
   return (
-    <svg onClick={props.onClick} className={`${styles.arrow} ${styles.arrow__right} ${disabeld}`} width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M9 18l6-6-6-6" stroke="var(--foreground)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <svg
+      onClick={props.onClick}
+      className={`${styles.arrow} ${styles.arrow__right} ${disabeld}`}
+      width="24"
+      height="24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 18l6-6-6-6"
+        stroke="var(--foreground)"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
   );
 };
 
 const Project = ({ category, company, cta, description, image, visitLink }) => {
-  const [currentSlide, setCurrentSlide] = React.useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderRef, slider] = useKeenSlider({
     initial: 0,
+    loop: true,
     slideChanged(s) {
       setCurrentSlide(s.details().relativeSlide);
     },
@@ -52,8 +79,14 @@ const Project = ({ category, company, cta, description, image, visitLink }) => {
         </div>
         {slider && (
           <>
-            <ArrowLeft onClick={(e) => e.stopPropagation() || slider.prev()} disabled={currentSlide === 0} />
-            <ArrowRight onClick={(e) => e.stopPropagation() || slider.next()} disabled={currentSlide === slider.details().size - 1} />
+            <ArrowLeft
+              onClick={(e) => e.stopPropagation() || slider.prev()}
+              disabled={currentSlide === 0}
+            />
+            <ArrowRight
+              onClick={(e) => e.stopPropagation() || slider.next()}
+              disabled={currentSlide === slider.details().size - 1}
+            />
           </>
         )}
         {slider && (
@@ -65,7 +98,10 @@ const Project = ({ category, company, cta, description, image, visitLink }) => {
                   onClick={() => {
                     slider.moveToSlideRelative(idx);
                   }}
-                  className={`${styles.dot}` + (currentSlide === idx ? ` ${styles.active}` : '')}
+                  className={
+                    `${styles.dot}` +
+                    (currentSlide === idx ? ` ${styles.active}` : "")
+                  }
                 />
               );
             })}

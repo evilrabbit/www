@@ -58,10 +58,10 @@ const Homepage = () => {
     tl.current.from(titleNameSplit.chars, {
       autoAlpha: 0,
       y: 30,
-      rotationY: 45,
+      // rotationY: 45,
       transformOrigin: 'top center',
       ease: 'back',
-      stagger: 0.1,
+      stagger: 0.05,
       onComplete: () => {
         titleNameSplit.revert();
       },

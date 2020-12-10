@@ -1,49 +1,59 @@
 .hero {
   display: flex;
-
   flex-direction: column;
   justify-content: center;
 
-  margin: auto;
-
-  padding: 0 var(--spacer-32);
-
   max-width: 1016px;
-
   height: 100vh;
+  margin: auto;
+  padding: 0 var(--spacer-32);
 }
 
 .hero h1 {
+  overflow: hidden;
+
   width: 100%;
   max-width: 100%;
-
-  overflow: hidden;
 
   --before-width: 0;
   font-kerning: none;
 }
 
-.hero h1 b, .hero h1 span {
-  display: inline-block;
+.hero h3 {
+  font-weight: 300;
+
+  letter-spacing: -0.055em;
+}
+
+.hero h3 a {
+  font-weight: 600;
+
+  color: var(--foreground);
+}
+
+.hero h1 b,
+.hero h1 span {
   position: relative;
+
+  display: inline-block;
 }
 
 #akatext {
   position: relative;
 }
 
-.hero h1 b:first-of-type:before, .hero h1 span:before {
+.hero h1 b:first-of-type:before,
+.hero h1 span:before {
   position: absolute;
   top: 50%;
   left: 0;
 
-  background: var(--foreground);
-
   width: var(--before-width);
-
   height: 10px;
 
-  content: '';
+  content: "";
+
+  background: var(--foreground);
 }
 
 .line__through {
@@ -51,12 +61,11 @@
 }
 
 .line {
+  height: 100px;
   margin: 0 auto;
   margin-top: 100px;
 
   border-left: 1px solid transparent;
-
-  height: 100px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -71,10 +80,9 @@
 @media screen and (max-width: 992px) {
   .hero {
     margin-bottom: 150px;
+    padding-bottom: 150px;
 
     border-bottom: 1px solid #eaeaea;
-
-    padding-bottom: 150px;
   }
   .line {
     display: none;
@@ -86,7 +94,6 @@
     margin-top: 50px;
     margin-bottom: 100px;
     margin-bottom: 100px;
-
     padding-bottom: 100px;
   }
 }
