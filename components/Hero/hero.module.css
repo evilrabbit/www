@@ -13,6 +13,39 @@
   height: 100vh;
 }
 
+.hero h1 {
+  width: 100%;
+  max-width: 100%;
+
+  overflow: hidden;
+
+  --before-width: 0;
+  font-kerning: none;
+}
+
+.hero h1 b, .hero h1 span {
+  display: inline-block;
+  position: relative;
+}
+
+#akatext {
+  position: relative;
+}
+
+.hero h1 b:first-of-type:before, .hero h1 span:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  background: var(--foreground);
+
+  width: var(--before-width);
+
+  height: 10px;
+
+  content: '';
+}
+
 .line__through {
   text-decoration: line-through;
 }

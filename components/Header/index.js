@@ -14,7 +14,7 @@ const Header = () => {
     }
   });
   return (
-    <header className={styles.header}>
+    <header id="header" className={styles.header}>
       <div className={styles.wrapper}>
         <div className="logotype" onClick={onClickHandler}>
           <svg width="42" height="44" viewBox="0 0 42 44" fill="none">

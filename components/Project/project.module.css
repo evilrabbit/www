@@ -1,11 +1,14 @@
 .project {
   display: flex;
 
+  align-items: center;
+
+  flex-direction: column;
   justify-content: center;
 
   border-bottom: 1px solid var(--border-color);
 
-  padding-bottom: 150px;
+  padding: var(--spacer-88) 0 var(--spacer-72) 0;
 
   max-width: 100%;
 
@@ -17,7 +20,7 @@
 .description {
   display: flex;
 
-  align-items: center;
+  align-items: stretch;
 
   justify-content: center;
 
@@ -27,13 +30,97 @@
 }
 
 .content {
+  align-self: center;
+
   padding: 0 var(--spacer-48);
 }
 
 .date {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
   border-left: 1px solid var(--border-color);
 
   padding-left: var(--spacer-28);
+}
+
+.dots {
+  display: flex;
+  position: relative;
+
+  justify-content: center;
+
+  z-index: 10;
+
+  margin-bottom: 100px;
+
+  padding: 10px 0;
+}
+
+.project .slider :global(figure) {
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  position: relative;
+
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 var(--spacer-28);
+
+  width: 100%;
+}
+
+.dot {
+  margin: 0 5px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: var(--gray-color);
+
+  cursor: pointer;
+
+  padding: 5px;
+
+  width: 10px;
+
+  height: 10px;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.active {
+  background: var(--foreground);
+}
+
+.arrow {
+  position: absolute;
+  top: 40%;
+
+  transform: translateY(-50%);
+
+  cursor: pointer;
+}
+
+.arrow__left {
+  left: var(--spacer-48);
+}
+
+.arrow__right {
+  right: var(--spacer-48);
+  left: auto;
+}
+
+.arrow__disabled {
+  fill: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 1200px) {

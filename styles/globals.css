@@ -3,13 +3,12 @@
 /* Global Styles
    ========================================================================== */
 :root {
+  --border-color: #eaeaea;
   /* Your default theme */
+
   --background: white;
-  --foreground: black;
-  --border-color: #EAEAEA;
-  --header-background: rgba(255, 255, 255, 0.5);
-  
   /* Fonts */
+
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   --font-size-2xl: 72px;
   --font-size-3xl: 110px;
@@ -19,8 +18,9 @@
   --font-size-md: 16px;
   --font-size-sm: 14px;
   --font-size-xl: 64px;
-  /* Spacers */
-  --spacer-8: 8px;
+  --foreground: black;
+  --gray-color: #c4c4c4;
+  --header-background: rgba(255, 255, 255, 0.5);
   --spacer-16: 16px;
   --spacer-24: 24px;
   --spacer-28: 28px;
@@ -30,7 +30,10 @@
   --spacer-56: 56px;
   --spacer-64: 64px;
   --spacer-72: 72px;
+  /* Spacers */
+  --spacer-8: 8px;
   --spacer-80: 80px;
+  --spacer-88: 88px;
   /* Misc */
   --transition-medium: 500ms cubic-bezier(0.32, 1, 0.68, 1);
   --transition-quick: 300ms cubic-bezier(0.32, 1, 0.68, 1);
@@ -46,15 +49,6 @@
 
 * {
   box-sizing: border-box;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 ::selection {
@@ -88,8 +82,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-  animation: fadein 2s;
+body {
+  overflow: hidden;
 }
 
 h1 {
@@ -171,4 +165,3 @@ p {
     max-width: 100%;
   }
 }
-

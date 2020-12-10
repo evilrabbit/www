@@ -1,9 +1,38 @@
+import React from 'react';
+import 'keen-slider/keen-slider.min.css';
+import { useKeenSlider } from 'keen-slider/react';
+
 import Link from 'next/link';
-import Image from '../image';
 
 import styles from './project.module.css';
 
-const Project = ({ company, category, visitLink }) => {
+const ArrowLeft = (props) => {
+  const disabeld = props.disabled ? ` ${styles.disabeld}` : '';
+  return (
+    <svg onClick={props.onClick} className={`${styles.arrow} ${styles.arrow__left} ${disabeld}`} width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 18l-6-6 6-6" stroke="var(--foreground)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  );
+};
+
+const ArrowRight = (props) => {
+  const disabeld = props.disabled ? ` ${styles.disabeld}` : '';
+  return (
+    <svg onClick={props.onClick} className={`${styles.arrow} ${styles.arrow__right} ${disabeld}`} width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 18l6-6-6-6" stroke="var(--foreground)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  );
+};
+
+const Project = ({ category, company, cta, description, image, visitLink }) => {
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+  const [sliderRef, slider] = useKeenSlider({
+    initial: 0,
+    slideChanged(s) {
+      setCurrentSlide(s.details().relativeSlide);
+    },
+  });
+
   return (
     <section className={styles.project}>
       <div className="wrapper">
@@ -12,29 +41,53 @@ const Project = ({ company, category, visitLink }) => {
           <b>{category}</b>
         </h2>
         <Link href={visitLink}>
-          <a target="_blank">View Site</a>
+          <a target="_blank">{cta}</a>
         </Link>
-        <Image src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`} width={2800 / 2.25} height={2102 / 2.25} margin={0} />
-        <div className={styles.description}>
-          <div className={styles.image__container}>
-            <Image src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551067289/www/works/zeit/awards.png`} width={680 / 2} height={200 / 2} margin={0} />
+      </div>
+      <div className={styles.slider}>
+        <div className="keen-slider" ref={sliderRef}>
+          <div className="keen-slider__slide">{image}</div>
+          <div className="keen-slider__slide">{image}</div>
+          <div className="keen-slider__slide">{image}</div>
+        </div>
+        {slider && (
+          <>
+            <ArrowLeft onClick={(e) => e.stopPropagation() || slider.prev()} disabled={currentSlide === 0} />
+            <ArrowRight onClick={(e) => e.stopPropagation() || slider.next()} disabled={currentSlide === slider.details().size - 1} />
+          </>
+        )}
+        {slider && (
+          <div className={styles.dots}>
+            {[...Array(slider.details().size).keys()].map((idx) => {
+              return (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    slider.moveToSlideRelative(idx);
+                  }}
+                  className={`${styles.dot}` + (currentSlide === idx ? ` ${styles.active}` : '')}
+                />
+              );
+            })}
           </div>
-          <div className={styles.content}>
-            <h3>
-              <b>Awarded</b>
-            </h3>
-            <p>
-              <Link href="https://cssdesignawards.com/">
-                <a target="_blank">CSSDA</a>
-              </Link>
-              : Official Public Vote Award Certificate of Excellence: Innovation, UX Design and UI Design
-            </p>
-          </div>
-          <div className={styles.date}>
-            <p>FEB 2019</p>
+        )}
+      </div>
+      {description && (
+        <div className="wrapper">
+          <div className={styles.description}>
+            <div className={styles.image__container}>{description.image}</div>
+            <div className={styles.content}>
+              <h3>
+                <b>{description.title}</b>
+              </h3>
+              <p>{description.content}</p>
+            </div>
+            <div className={styles.date}>
+              <p>{description.date}</p>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </section>
   );
 };
