@@ -1,16 +1,16 @@
-import CustomHead from '../components/CustomHead';
-import Header from '../components/Header';
+import CustomHead from "../components/CustomHead";
+import Header from "../components/Header";
 // import Image from '../components/image';
-import Image from 'next/image';
-import Link from 'next/link';
-import Hero from '../components/Hero';
-import Project from '../components/Project';
+import Image from "next/image";
+import Link from "next/link";
+import Hero from "../components/Hero";
+import Project from "../components/Project";
 
-import styles from '../styles/homepage.module.css';
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrambleTextPlugin } from 'gsap/ScrambleTextPlugin';
-import { SplitText } from 'gsap/SplitText';
+import styles from "../styles/homepage.module.css";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+import { SplitText } from "gsap/SplitText";
 
 gsap.registerPlugin(ScrambleTextPlugin, SplitText);
 
@@ -21,34 +21,34 @@ const Homepage = () => {
   useEffect(() => {
     if (!mainRef.current) return;
 
-    const title = document.querySelectorAll('#hero h1');
-    const titleName = document.querySelector('#name');
-    const titleEvil = document.querySelector('#evil');
-    const titleAKAText = document.querySelector('#akatext');
-    const headof = document.querySelector('#headof');
-    const header = document.querySelector('#header');
+    const title = document.querySelectorAll("#hero h1");
+    const titleName = document.querySelector("#name");
+    const titleEvil = document.querySelector("#evil");
+    const titleAKAText = document.querySelector("#akatext");
+    const headof = document.querySelector("#headof");
+    const header = document.querySelector("#header");
 
     const titleNameSplit = new SplitText(titleName, {
-      type: 'chars, words, lines',
+      type: "chars, words, lines",
     });
 
     const titleEvilSplit = new SplitText(titleEvil, {
-      type: 'chars, words, lines',
+      type: "chars, words, lines",
     });
 
     tl.current = gsap.timeline({
       paused: true,
       onComplete: () => {
-        const body = document.querySelector('body');
-        gsap.delayedCall(0.3, () => (body.style.overflow = 'initial'));
+        const body = document.querySelector("body");
+        gsap.delayedCall(0.3, () => (body.style.overflow = "initial"));
       },
       defaults: {
-        ease: 'power2',
+        ease: "power2",
         duration: 0.65,
       },
     });
 
-    tl.current.set('#hero', { perspective: 400 });
+    // tl.current.set("#hero", { perspective: 400 });
     tl.current.set(titleAKAText, { opacity: 0 });
 
     tl.current.to(mainRef.current, {
@@ -57,10 +57,7 @@ const Homepage = () => {
     });
     tl.current.from(titleNameSplit.chars, {
       autoAlpha: 0,
-      y: 30,
-      transformOrigin: 'top center',
-      ease: 'back',
-      stagger: 0.05,
+      stagger: 0.01,
       onComplete: () => {
         titleNameSplit.revert();
       },
@@ -70,18 +67,14 @@ const Homepage = () => {
       {
         opacity: 1,
       },
-      '> -.2'
+      "> -.2"
     );
     tl.current.to(title, {
-      '--before-width': '100%',
+      "--before-width": "100%",
     });
     tl.current.from(titleEvilSplit.chars, {
       autoAlpha: 0,
-      x: 10,
-      rotationY: 15,
-      transformOrigin: 'center right',
-      ease: 'back',
-      stagger: 0.1,
+      stagger: 0.01,
       onComplete: () => {
         titleNameSplit.revert();
       },
@@ -101,7 +94,7 @@ const Homepage = () => {
       }
     );
 
-    tl.current.timeScale(1.15).play();
+    tl.current.timeScale(.8).play();
   }, [mainRef]);
   return (
     <>
@@ -113,30 +106,52 @@ const Homepage = () => {
           company="Vercel"
           category="Website"
           cta="Visit Site"
-          image={<Image quality={95} src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`} width={2800 / 2.25} height={2102 / 2.25} />}
+          image={
+            <Image
+              quality={95}
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
+              width={2800 / 2.25}
+              height={2102 / 2.25}
+            />
+          }
           visitLink="https://vercel.com"
           description={{
-            title: 'Awarded',
-            image: <Image quality={95} src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551067289/www/works/zeit/awards.png`} width={680 / 2} height={200 / 2} />,
+            title: "Awarded",
+            image: (
+              <Image
+                quality={95}
+                src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551067289/www/works/zeit/awards.png`}
+                width={680 / 2}
+                height={200 / 2}
+              />
+            ),
             content: (
               <>
                 <Link href="https://cssdesignawards.com/">
                   <a target="_blank">CSSDA</a>
                 </Link>
-                : Official Public Vote Award Certificate of Excellence: Innovation, UX Design and UI Design{' '}
+                : Official Public Vote Award Certificate of Excellence:
+                Innovation, UX Design and UI Design{" "}
               </>
             ),
-            date: 'FEB 2019',
+            date: "FEB 2019",
           }}
         />
         <Project
           company="NOW"
           category="Desktop"
           cta="Get App"
-          image={<Image quality={95} src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`} width={1376 / 2} height={1196 / 2} />}
+          image={
+            <Image
+              quality={95}
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
+              width={1376 / 2}
+              height={1196 / 2}
+            />
+          }
           visitLink="https://zeit.co/download"
           description={{
-            title: 'Featured',
+            title: "Featured",
             image: (
               <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
                 <circle cx="50" cy="50" r="50" fill="#2B2E3B" />
@@ -172,15 +187,15 @@ const Homepage = () => {
             ),
             content: (
               <>
-                The application was highlighted on{' '}
+                The application was highlighted on{" "}
                 <Link href="https://electronjs.org/">
                   <a target="_blank">Electron</a>
-                </Link>{' '}
-                front page along with other well-known apps such as:{' '}
+                </Link>{" "}
+                front page along with other well-known apps such as:{" "}
                 <Link href="https://code.visualstudio.com/">
                   <a target="_blank">Visual Studio Code</a>
                 </Link>
-                ,{' '}
+                ,{" "}
                 <Link href="https://www.figma.com">
                   <a target="_blank">Figma</a>
                 </Link>
@@ -188,30 +203,42 @@ const Homepage = () => {
                 <Link href="https://www.skype.com">
                   <a target="_blank">Skype</a>
                 </Link>
-                ,{' '}
+                ,{" "}
                 <Link href="https://www.slack.com">
                   <a target="_blank">Slack</a>
                 </Link>
-                ,{' '}
+                ,{" "}
                 <Link href="https://discordapp.com/">
                   <a target="_blank">Discord</a>
                 </Link>
                 , and many more.
               </>
             ),
-            date: 'Since 2017',
+            date: "Since 2017",
           }}
         />
         <Project
           company="HYPER"
           category="Terminal"
           cta="Get App"
-          image={<Image quality={95} src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419978/www/works/zeit/hyper-app.png`} width={2192 / 2} height={1774 / 2} />}
+          image={
+            <Image
+              quality={95}
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419978/www/works/zeit/hyper-app.png`}
+              width={2192 / 2}
+              height={1774 / 2}
+            />
+          }
           visitLink="https://hyper.is"
           description={{
-            title: 'Featured',
+            title: "Featured",
             image: (
-              <svg width="100" height="100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="100"
+                height="100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <circle cx="50" cy="50" r="50" fill="#2B2E3B" />
                 <path
                   d="M43.273 35.747c-6.534-1.19-11.7.055-13.759 3.622-1.536 2.66-1.097 6.19 1.065 9.96a.67.67 0 101.163-.666c-1.948-3.397-2.327-6.442-1.067-8.624 1.71-2.963 6.318-4.074 12.358-2.974a.67.67 0 00.24-1.318zm-9.296 18.167c2.642 2.904 6.074 5.627 9.989 7.887 9.478 5.472 19.568 6.934 24.541 3.544a.67.67 0 00-.755-1.107c-4.45 3.034-14.035 1.645-23.116-3.598-3.798-2.192-7.121-4.83-9.668-7.628a.67.67 0 10-.99.902z"
@@ -233,15 +260,15 @@ const Homepage = () => {
             ),
             content: (
               <>
-                The application was highlighted on{' '}
+                The application was highlighted on{" "}
                 <Link href="https://electronjs.org/">
                   <a target="_blank">Electron</a>
-                </Link>{' '}
-                front page along with other well-known apps such as:{' '}
+                </Link>{" "}
+                front page along with other well-known apps such as:{" "}
                 <Link href="https://code.visualstudio.com/">
                   <a target="_blank">Visual Studio Code</a>
                 </Link>
-                ,{' '}
+                ,{" "}
                 <Link href="https://www.figma.com">
                   <a target="_blank">Figma</a>
                 </Link>
@@ -249,44 +276,54 @@ const Homepage = () => {
                 <Link href="https://www.skype.com">
                   <a target="_blank">Skype</a>
                 </Link>
-                ,{' '}
+                ,{" "}
                 <Link href="https://www.slack.com">
                   <a target="_blank">Slack</a>
                 </Link>
-                ,{' '}
+                ,{" "}
                 <Link href="https://discordapp.com/">
                   <a target="_blank">Discord</a>
                 </Link>
                 , and many more.
               </>
             ),
-            date: 'Since 2017',
+            date: "Since 2017",
           }}
         />
         <Project
           company="SHARELOCK"
           category="Product"
           cta="Try It Now"
-          image={<Image quality={95} src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419158/www/works/auth0/sharelock-io.png`} width={1240 / 2} height={876 / 2} />}
+          image={
+            <Image
+              quality={95}
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419158/www/works/auth0/sharelock-io.png`}
+              width={1240 / 2}
+              height={876 / 2}
+            />
+          }
           visitLink="https://sharelock.io/"
           description={{
-            title: 'Featured',
+            title: "Featured",
             image: (
               <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
                 <circle cx="50" cy="50" r="50" fill="#FF6600" />
-                <path d="M52.9863 71V55.417L66.4072 32.9521H59.8682L50.165 49.748H49.9805L40.2773 32.9521H33.6855L47.0801 55.417V71H52.9863Z" fill="var(--foreground)" />
+                <path
+                  d="M52.9863 71V55.417L66.4072 32.9521H59.8682L50.165 49.748H49.9805L40.2773 32.9521H33.6855L47.0801 55.417V71H52.9863Z"
+                  fill="var(--foreground)"
+                />
               </svg>
             ),
             content: (
               <>
-                The app was featured on{' '}
+                The app was featured on{" "}
                 <Link href="https://news.ycombinator.com/">
                   <a target="_blank">Hacker News</a>
-                </Link>{' '}
+                </Link>{" "}
                 front page.
               </>
             ),
-            date: 'FEB 2015',
+            date: "FEB 2015",
           }}
         />
         <Project
@@ -294,7 +331,12 @@ const Homepage = () => {
           category="Product"
           cta="Try It Now"
           image={
-            <Image quality={95} src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551337683/www/works/auth0/auth0-guardian.png`} width={1536 / 2} height={1668 / 2} />
+            <Image
+              quality={95}
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551337683/www/works/auth0/auth0-guardian.png`}
+              width={1536 / 2}
+              height={1668 / 2}
+            />
           }
           visitLink="https://auth0.com/multifactor-authentication"
         />

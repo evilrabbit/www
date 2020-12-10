@@ -11,6 +11,7 @@
   background-color: var(--header-background);
 
   backdrop-filter: blur(8px);
+  transition: background var(--transition-quick);
 }
 
 .wrapper {
