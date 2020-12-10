@@ -86,7 +86,7 @@ body {
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: background var(--transition-quick);
 }
 
