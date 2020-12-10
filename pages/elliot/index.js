@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from "../../components/zeit-header";
-import Image from "../../components/image";
+import Image from "next/image";
 import Link from "next/link";
 
 export default () => (
