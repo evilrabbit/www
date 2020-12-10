@@ -5,8 +5,8 @@ const Hero = () => {
     <section id="hero" className={styles.hero}>
       <h1>
         Hi, I'm {""}
-        <b id="name">Nicolás Garro,</b>
-        <span id="akatext">a.k.a</span>&nbsp;
+        <b id="name">Nicolás Garro,</b><br className={styles.ipadbr} />
+        <span id="akatext">a.k.a</span>
         <b id="evil">&nbsp;Evil Rabbit.</b>
       </h1>
       <h3 id="headof">

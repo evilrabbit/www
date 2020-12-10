@@ -68,6 +68,10 @@
   border-left: 1px solid transparent;
 }
 
+.ipadbr {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .hero {
     margin-top: 100px;
@@ -95,5 +99,25 @@
     margin-bottom: 100px;
     margin-bottom: 100px;
     padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-device-width: 834px) and (max-device-width: 1194px) and (orientation: landscape) {
+  .hero {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-device-width: 834px) and (max-device-width: 1194px) and (orientation: portrait) {
+  .hero {
+    margin-top: 0;
+    height: 95vh;
+  }
+  .hero h1 {
+    font-size: var(--font-size-2xl);
+    letter-spacing: -1px;
+  }
+  .ipadbr {
+    display: block;
   }
 }
