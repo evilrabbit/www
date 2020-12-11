@@ -21,9 +21,9 @@ const ArrowLeft = (props) => {
       <path
         d="M15 18l-6-6 6-6"
         stroke="var(--foreground)"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -43,9 +43,9 @@ const ArrowRight = (props) => {
       <path
         d="M9 18l6-6-6-6"
         stroke="var(--foreground)"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
