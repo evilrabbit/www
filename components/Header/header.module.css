@@ -21,7 +21,7 @@
 
   max-width: 1016px;
   margin: auto;
-  padding: var(--spacer-24) var(--spacer-32);
+  padding: var(--spacer-22) var(--spacer-32);
 
   user-select: none;
 }
@@ -53,6 +53,10 @@
   margin: 0;
 
   vertical-align: middle;
+}
+
+.logotype {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
