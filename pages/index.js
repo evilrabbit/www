@@ -146,15 +146,36 @@ const Homepage = () => {
           company="Vercel"
           category="Website"
           cta="Visit Site"
-          image={
+          images={[
             <Image
               quality={95}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
               width={2800 / 2.25}
               height={2102 / 2.25}
-            />
-          }
+            />,
+            <Image
+              quality={95}
+              loading="eager"
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
+              width={2800 / 2.25}
+              height={2102 / 2.25}
+            />,
+            <Image
+              quality={95}
+              loading="eager"
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
+              width={2800 / 2.25}
+              height={2102 / 2.25}
+            />,
+            <Image
+              quality={95}
+              loading="eager"
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
+              width={2800 / 2.25}
+              height={2102 / 2.25}
+            />,
+          ]}
           visitLink="https://vercel.com"
           description={{
             title: "Awarded",
@@ -167,6 +188,7 @@ const Homepage = () => {
                 height={200 / 2}
               />
             ),
+
             content: (
               <>
                 <Link href="https://cssdesignawards.com/">
@@ -183,15 +205,29 @@ const Homepage = () => {
           company="NOW"
           category="Desktop"
           cta="Get App"
-          image={
+          images={[
             <Image
               quality={95}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
               width={1376 / 2}
               height={1196 / 2}
-            />
-          }
+            />,
+            <Image
+              quality={95}
+              loading="eager"
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
+              width={1376 / 2}
+              height={1196 / 2}
+            />,
+            <Image
+              quality={95}
+              loading="eager"
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
+              width={1376 / 2}
+              height={1196 / 2}
+            />,
+          ]}
           visitLink="https://zeit.co/download"
           description={{
             title: "Featured",
@@ -264,15 +300,29 @@ const Homepage = () => {
           company="HYPER"
           category="Terminal"
           cta="Get App"
-          image={
+          images={[
             <Image
               quality={95}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419978/www/works/zeit/hyper-app.png`}
               width={2192 / 2}
               height={1774 / 2}
-            />
-          }
+            />,
+            <Image
+              quality={95}
+              loading="eager"
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419978/www/works/zeit/hyper-app.png`}
+              width={2192 / 2}
+              height={1774 / 2}
+            />,
+            <Image
+              quality={95}
+              loading="eager"
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419978/www/works/zeit/hyper-app.png`}
+              width={2192 / 2}
+              height={1774 / 2}
+            />,
+          ]}
           visitLink="https://hyper.is"
           description={{
             title: "Featured",
@@ -338,15 +388,29 @@ const Homepage = () => {
           company="SHARELOCK"
           category="Product"
           cta="Try It Now"
-          image={
+          images={[
             <Image
               quality={95}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419158/www/works/auth0/sharelock-io.png`}
               width={1240 / 2}
               height={876 / 2}
-            />
-          }
+            />,
+            <Image
+              quality={95}
+              loading="eager"
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419158/www/works/auth0/sharelock-io.png`}
+              width={1240 / 2}
+              height={876 / 2}
+            />,
+            <Image
+              quality={95}
+              loading="eager"
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419158/www/works/auth0/sharelock-io.png`}
+              width={1240 / 2}
+              height={876 / 2}
+            />,
+          ]}
           visitLink="https://sharelock.io/"
           description={{
             title: "Featured",
@@ -375,15 +439,29 @@ const Homepage = () => {
           company="GUARDIAN"
           category="Product"
           cta="Try It Now"
-          image={
+          images={[
             <Image
               quality={95}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551337683/www/works/auth0/auth0-guardian.png`}
               width={1536 / 2}
               height={1668 / 2}
-            />
-          }
+            />,
+            <Image
+              quality={95}
+              loading="eager"
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551337683/www/works/auth0/auth0-guardian.png`}
+              width={1536 / 2}
+              height={1668 / 2}
+            />,
+            <Image
+              quality={95}
+              loading="eager"
+              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551337683/www/works/auth0/auth0-guardian.png`}
+              width={1536 / 2}
+              height={1668 / 2}
+            />,
+          ]}
           visitLink="https://auth0.com/multifactor-authentication"
         />
       </main>

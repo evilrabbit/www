@@ -10,7 +10,7 @@ const Hero = () => {
         <b id="evil">&nbsp;Evil Rabbit.</b>
       </h1>
       <h3 id="headof">
-        Head of Design at △{" "}
+        Head of Design at {" "}
         <a href="https://vercel.com" target="_blank">
           Vercel
         </a>

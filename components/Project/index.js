@@ -50,7 +50,14 @@ const ArrowRight = (props) => {
   );
 };
 
-const Project = ({ category, company, cta, description, image, visitLink }) => {
+const Project = ({
+  category,
+  company,
+  cta,
+  description,
+  images,
+  visitLink,
+}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderRef, slider] = useKeenSlider({
     initial: 0,
@@ -73,9 +80,14 @@ const Project = ({ category, company, cta, description, image, visitLink }) => {
       </div>
       <div className={styles.slider}>
         <div className="keen-slider" ref={sliderRef}>
-          <div className="keen-slider__slide">{image}</div>
-          <div className="keen-slider__slide">{image}</div>
-          <div className="keen-slider__slide">{image}</div>
+          {images &&
+            images.map((image, index) => {
+              return (
+                <div key={index} className="keen-slider__slide">
+                  {image}
+                </div>
+              );
+            })}
         </div>
         {slider && (
           <>

@@ -21,7 +21,7 @@
 
   max-width: 1016px;
   margin: auto;
-  padding: var(--spacer-32);
+  padding: var(--spacer-24) var(--spacer-32);
 
   user-select: none;
 }
