@@ -163,8 +163,10 @@ p {
 }
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 22vw;
-    letter-spacing: -5px;
+    /* font-size: 22vw;
+    letter-spacing: -5px; */
+    font-size: 15vw;
+    letter-spacing: -4px;
   }
   .wrapper {
     max-width: 100%;

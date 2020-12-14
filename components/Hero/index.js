@@ -6,8 +6,8 @@ const Hero = () => {
       <h1>
         Hi, I'm {""}
         <b id="name">Nicolás Garro,</b><br className={styles.ipadbr} />
-        <span id="akatext">a.k.a</span>
-        <b id="evil">&nbsp;Evil Rabbit.</b>
+        <span id="akatext">a.k.a&nbsp;</span>
+        <b id="evil">Evil Rabbit.</b>
       </h1>
       <h3 id="headof">
         Head of Design at {" "}
