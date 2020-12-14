@@ -1,10 +1,10 @@
-import '../styles/globals.css';
+import "../styles/globals.css";
 
-import { ThemeProvider } from 'next-themes';
+import { ThemeProvider } from "next-themes";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultTheme="light" enableSystem={false}>
       <Component {...pageProps} />
     </ThemeProvider>
   );
