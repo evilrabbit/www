@@ -18,7 +18,7 @@
   align-items: stretch;
   justify-content: center;
 
-  margin-top: -50px;
+  margin-top: var(--spacer-56);
 
   text-align: left;
 }
@@ -105,6 +105,14 @@
 
 .arrow__disabled {
   fill: rgba(255, 255, 255, 0.5);
+}
+
+.project h2 + a {
+  font-weight: 600;
+
+  display: inline-block;
+
+  margin-bottom: var(--spacer-64);
 }
 
 @media screen and (max-width: 1200px) {
