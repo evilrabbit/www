@@ -143,8 +143,8 @@ const Homepage = () => {
       <main id="main" ref={mainRef} className={styles.main}>
         <Hero />
         <Project
-          company="Vercel"
-          category="Website"
+          company="Rebranding"
+          category="Vercel"
           cta="Visit Site"
           images={[
             <Image
@@ -216,8 +216,8 @@ const Homepage = () => {
           }}
         />
         <Project
-          company="Next.JS"
-          category="Conf"
+          company="Design"
+          category="Next.js Conf"
           cta="Visit Site"
           images={[
             <Image
@@ -245,24 +245,84 @@ const Homepage = () => {
           visitLink="https://vercel.com"
         />
         <Project
-          company="NOW"
-          category="Desktop"
-          cta="Get App"
+          company="Design"
+          category="Hyper Terminal"
+          cta="View Site"
           images={[
             <Image
               unoptimized
               loading="eager"
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
-              width={1376 / 2}
-              height={1196 / 2}
+              src={`/images/projects/terminal/001.png`}
+              width={1112}
+              height={898}
             />,
-            <Image
-              unoptimized
-              loading="eager"
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
-              width={1376 / 2}
-              height={1196 / 2}
-            />,
+          ]}
+          visitLink="https://hyper.is"
+          description={{
+            title: "Featured",
+            image: (
+              <svg
+                width="100"
+                height="100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="50" cy="50" r="50" fill="#2B2E3B" />
+                <path
+                  d="M43.273 35.747c-6.534-1.19-11.7.055-13.759 3.622-1.536 2.66-1.097 6.19 1.065 9.96a.67.67 0 101.163-.666c-1.948-3.397-2.327-6.442-1.067-8.624 1.71-2.963 6.318-4.074 12.358-2.974a.67.67 0 00.24-1.318zm-9.296 18.167c2.642 2.904 6.074 5.627 9.989 7.887 9.478 5.472 19.568 6.934 24.541 3.544a.67.67 0 00-.755-1.107c-4.45 3.034-14.035 1.645-23.116-3.598-3.798-2.192-7.121-4.83-9.668-7.628a.67.67 0 10-.99.902z"
+                  fill="#9FEAF9"
+                />
+                <path
+                  d="M66.92 53.099c4.279-5.054 5.773-10.138 3.718-13.697-1.512-2.618-4.708-4.001-8.956-4.056a.67.67 0 10-.017 1.34c3.82.05 6.574 1.24 7.813 3.386 1.706 2.956.374 7.49-3.58 12.16a.67.67 0 001.023.867zm-10.995-17.13c-3.868.83-7.985 2.45-11.94 4.733C34.202 46.35 27.82 54.68 28.706 60.72a.67.67 0 101.326-.194c-.787-5.363 5.263-13.259 14.625-18.664 3.836-2.214 7.822-3.783 11.55-4.582a.67.67 0 10-.28-1.31z"
+                  fill="#9FEAF9"
+                />
+                <path
+                  d="M40.074 64.908C42.311 71.154 45.971 75 50.086 75c3.001 0 5.778-2.046 7.943-5.648a.67.67 0 00-1.149-.69c-1.945 3.237-4.336 4.998-6.794 4.998-3.418 0-6.682-3.43-8.75-9.204a.67.67 0 10-1.262.452zm20.433-1.222c1.158-3.7 1.78-7.97 1.78-12.418 0-11.1-3.885-20.669-9.419-23.126a.67.67 0 10-.544 1.225c4.936 2.191 8.623 11.273 8.623 21.901 0 4.316-.603 8.45-1.72 12.018a.67.67 0 001.28.4zM73.126 63.03a3.207 3.207 0 10-6.414 0 3.207 3.207 0 006.414 0zm-1.34 0a1.867 1.867 0 11-3.734 0 1.867 1.867 0 013.734 0zM30.207 66.236a3.207 3.207 0 100-6.413 3.207 3.207 0 000 6.413zm0-1.34a1.867 1.867 0 110-3.733 1.867 1.867 0 010 3.733z"
+                  fill="#9FEAF9"
+                />
+                <path
+                  d="M50.086 31.414a3.207 3.207 0 100-6.414 3.207 3.207 0 000 6.414zm0-1.34a1.867 1.867 0 110-3.734 1.867 1.867 0 010 3.734zM50.576 53.536a2.32 2.32 0 11-.98-4.536 2.32 2.32 0 01.98 4.536z"
+                  fill="#9FEAF9"
+                />
+              </svg>
+            ),
+            content: (
+              <>
+                The application was highlighted on{" "}
+                <Link href="https://electronjs.org/">
+                  <a target="_blank">Electron</a>
+                </Link>{" "}
+                front page along with other well-known apps such as:{" "}
+                <Link href="https://code.visualstudio.com/">
+                  <a target="_blank">Visual Studio Code</a>
+                </Link>
+                ,{" "}
+                <Link href="https://www.figma.com">
+                  <a target="_blank">Figma</a>
+                </Link>
+                ,{` `}
+                <Link href="https://www.skype.com">
+                  <a target="_blank">Skype</a>
+                </Link>
+                ,{" "}
+                <Link href="https://www.slack.com">
+                  <a target="_blank">Slack</a>
+                </Link>
+                ,{" "}
+                <Link href="https://discordapp.com/">
+                  <a target="_blank">Discord</a>
+                </Link>
+                , and many more.
+              </>
+            ),
+            date: "Since 2017",
+          }}
+        />
+        <Project
+          company="Design"
+          category="Now Desktop"
+          cta="View Site"
+          images={[
             <Image
               unoptimized
               loading="eager"
@@ -340,83 +400,9 @@ const Homepage = () => {
           }}
         />
         <Project
-          company="HYPER"
-          category="Terminal"
-          cta="Get App"
-          images={[
-            <Image
-              unoptimized
-              loading="eager"
-              src={`/images/projects/terminal/001.png`}
-              width={1112}
-              height={897}
-            />,
-          ]}
-          visitLink="https://hyper.is"
-          description={{
-            title: "Featured",
-            image: (
-              <svg
-                width="100"
-                height="100"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="50" cy="50" r="50" fill="#2B2E3B" />
-                <path
-                  d="M43.273 35.747c-6.534-1.19-11.7.055-13.759 3.622-1.536 2.66-1.097 6.19 1.065 9.96a.67.67 0 101.163-.666c-1.948-3.397-2.327-6.442-1.067-8.624 1.71-2.963 6.318-4.074 12.358-2.974a.67.67 0 00.24-1.318zm-9.296 18.167c2.642 2.904 6.074 5.627 9.989 7.887 9.478 5.472 19.568 6.934 24.541 3.544a.67.67 0 00-.755-1.107c-4.45 3.034-14.035 1.645-23.116-3.598-3.798-2.192-7.121-4.83-9.668-7.628a.67.67 0 10-.99.902z"
-                  fill="#9FEAF9"
-                />
-                <path
-                  d="M66.92 53.099c4.279-5.054 5.773-10.138 3.718-13.697-1.512-2.618-4.708-4.001-8.956-4.056a.67.67 0 10-.017 1.34c3.82.05 6.574 1.24 7.813 3.386 1.706 2.956.374 7.49-3.58 12.16a.67.67 0 001.023.867zm-10.995-17.13c-3.868.83-7.985 2.45-11.94 4.733C34.202 46.35 27.82 54.68 28.706 60.72a.67.67 0 101.326-.194c-.787-5.363 5.263-13.259 14.625-18.664 3.836-2.214 7.822-3.783 11.55-4.582a.67.67 0 10-.28-1.31z"
-                  fill="#9FEAF9"
-                />
-                <path
-                  d="M40.074 64.908C42.311 71.154 45.971 75 50.086 75c3.001 0 5.778-2.046 7.943-5.648a.67.67 0 00-1.149-.69c-1.945 3.237-4.336 4.998-6.794 4.998-3.418 0-6.682-3.43-8.75-9.204a.67.67 0 10-1.262.452zm20.433-1.222c1.158-3.7 1.78-7.97 1.78-12.418 0-11.1-3.885-20.669-9.419-23.126a.67.67 0 10-.544 1.225c4.936 2.191 8.623 11.273 8.623 21.901 0 4.316-.603 8.45-1.72 12.018a.67.67 0 001.28.4zM73.126 63.03a3.207 3.207 0 10-6.414 0 3.207 3.207 0 006.414 0zm-1.34 0a1.867 1.867 0 11-3.734 0 1.867 1.867 0 013.734 0zM30.207 66.236a3.207 3.207 0 100-6.413 3.207 3.207 0 000 6.413zm0-1.34a1.867 1.867 0 110-3.733 1.867 1.867 0 010 3.733z"
-                  fill="#9FEAF9"
-                />
-                <path
-                  d="M50.086 31.414a3.207 3.207 0 100-6.414 3.207 3.207 0 000 6.414zm0-1.34a1.867 1.867 0 110-3.734 1.867 1.867 0 010 3.734zM50.576 53.536a2.32 2.32 0 11-.98-4.536 2.32 2.32 0 01.98 4.536z"
-                  fill="#9FEAF9"
-                />
-              </svg>
-            ),
-            content: (
-              <>
-                The application was highlighted on{" "}
-                <Link href="https://electronjs.org/">
-                  <a target="_blank">Electron</a>
-                </Link>{" "}
-                front page along with other well-known apps such as:{" "}
-                <Link href="https://code.visualstudio.com/">
-                  <a target="_blank">Visual Studio Code</a>
-                </Link>
-                ,{" "}
-                <Link href="https://www.figma.com">
-                  <a target="_blank">Figma</a>
-                </Link>
-                ,{` `}
-                <Link href="https://www.skype.com">
-                  <a target="_blank">Skype</a>
-                </Link>
-                ,{" "}
-                <Link href="https://www.slack.com">
-                  <a target="_blank">Slack</a>
-                </Link>
-                ,{" "}
-                <Link href="https://discordapp.com/">
-                  <a target="_blank">Discord</a>
-                </Link>
-                , and many more.
-              </>
-            ),
-            date: "Since 2017",
-          }}
-        />
-        <Project
-          company="SHARELOCK"
-          category="Product Design"
-          cta="Try It Now"
+          company="Design"
+          category="Sharelock"
+          cta="View Site"
           images={[
             <Image
               unoptimized
@@ -451,9 +437,9 @@ const Homepage = () => {
           }}
         />
         <Project
-          company="GUARDIAN"
-          category="Product"
-          cta="Try It Now"
+          company="Design"
+          category="Guardian"
+          cta="View Site"
           images={[
             <Image
               unoptimized
