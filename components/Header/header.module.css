@@ -55,9 +55,9 @@
   vertical-align: middle;
 }
 
-.logotype {
+/* .logotype {
   cursor: pointer;
-}
+} */
 
 @media screen and (max-width: 992px) {
   .wrapper .navigation {
