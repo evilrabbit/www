@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from "../../components/zeit-header";
-import Image from "../../components/image";
+import Image from "next/image";
 import Link from "next/link";
 
 export default () => (
@@ -261,7 +261,7 @@ export default () => (
         margin-top: 40px;
       }
       .submission .thumb {
-        background: white;
+        background: var(--foreground);
         border-radius: 8px;
         width: 300px;
         height: 200px;
@@ -451,8 +451,8 @@ export default () => (
     `}</style>
     <style global jsx>{`
       ::selection {
-        background: #000;
-        color: #FFF;
+        background: var(--foreground);
+        color: var(--background);
       }
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;

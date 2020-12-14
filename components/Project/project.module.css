@@ -1,0 +1,138 @@
+.project {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 100%;
+  height: auto;
+  padding: var(--spacer-88) 0 var(--spacer-72) 0;
+
+  text-align: center;
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.description {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+  margin-top: var(--spacer-56);
+
+  text-align: left;
+}
+
+.content {
+  align-self: center;
+
+  padding: 0 var(--spacer-48);
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: var(--spacer-28);
+
+  border-left: 1px solid var(--border-color);
+}
+
+.dots {
+  position: relative;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 100px;
+  padding: 10px 0;
+}
+
+.project .slider :global(figure) {
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  padding: 0 var(--spacer-28);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  padding: 5px;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 50%;
+  background: var(--gray-color);
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.active {
+  background: var(--foreground);
+}
+
+.arrow {
+  position: absolute;
+  top: 40%;
+
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.arrow__left {
+  left: var(--spacer-48);
+}
+
+.arrow__right {
+  right: var(--spacer-48);
+  left: auto;
+}
+
+.arrow__disabled {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.project h2 + a {
+  font-weight: 600;
+
+  display: inline-block;
+
+  margin-bottom: var(--spacer-64);
+}
+
+@media screen and (max-width: 1200px) {
+  .project {
+    flex-direction: column;
+
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .description {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .description > div {
+    margin-bottom: var(--spacer-28);
+    padding: 0 var(--spacer-16);
+
+    text-align: left;
+  }
+}
