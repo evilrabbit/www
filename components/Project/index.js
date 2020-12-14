@@ -95,48 +95,52 @@ const Project = ({
           <a target="_blank">{cta}</a>
         </Link>
       </div>
-      <div className={styles.slider} ref={targetRef}>
-        <div className="keen-slider" ref={sliderRef}>
-          {images &&
-            images.map((image, index) => {
-              return (
-                <div key={index} className="keen-slider__slide">
-                  {image}
-                </div>
-              );
-            })}
-        </div>
-        {slider && (
-          <>
-            <ArrowLeft
-              onClick={(e) => e.stopPropagation() || slider.prev()}
-              disabled={currentSlide === 0}
-            />
-            <ArrowRight
-              onClick={(e) => e.stopPropagation() || slider.next()}
-              disabled={currentSlide === slider.details().size - 1}
-            />
-          </>
-        )}
-        {slider && (
-          <div className={styles.dots}>
-            {[...Array(slider.details().size).keys()].map((idx) => {
-              return (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    slider.moveToSlideRelative(idx);
-                  }}
-                  className={
-                    `${styles.dot}` +
-                    (currentSlide === idx ? ` ${styles.active}` : "")
-                  }
-                />
-              );
-            })}
+      {images.length > 1 ? (
+        <div className={styles.slider} ref={targetRef}>
+          <div className="keen-slider" ref={sliderRef}>
+            {images &&
+              images.map((image, index) => {
+                return (
+                  <div key={index} className="keen-slider__slide">
+                    {image}
+                  </div>
+                );
+              })}
           </div>
-        )}
-      </div>
+          {slider && (
+            <>
+              <ArrowLeft
+                onClick={(e) => e.stopPropagation() || slider.prev()}
+                disabled={currentSlide === 0}
+              />
+              <ArrowRight
+                onClick={(e) => e.stopPropagation() || slider.next()}
+                disabled={currentSlide === slider.details().size - 1}
+              />
+            </>
+          )}
+          {slider && (
+            <div className={styles.dots}>
+              {[...Array(slider.details().size).keys()].map((idx) => {
+                return (
+                  <button
+                    key={idx}
+                    onClick={() => {
+                      slider.moveToSlideRelative(idx);
+                    }}
+                    className={
+                      `${styles.dot}` +
+                      (currentSlide === idx ? ` ${styles.active}` : "")
+                    }
+                  />
+                );
+              })}
+            </div>
+          )}
+        </div>
+      ) : (
+        images
+      )}
       {description && (
         <div className="wrapper">
           <div className={styles.description}>

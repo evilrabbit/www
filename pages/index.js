@@ -148,16 +148,44 @@ const Homepage = () => {
           cta="Visit Site"
           images={[
             <Image
-              quality={98}
+              unoptimized
               loading="eager"
               src={`/images/projects/vercel/001.png`}
               width={1200}
               height={900}
             />,
             <Image
-              quality={98}
+              unoptimized
               loading="eager"
               src={`/images/projects/vercel/002.png`}
+              width={1200}
+              height={900}
+            />,
+            <Image
+              unoptimized
+              loading="eager"
+              src={`/images/projects/vercel/003.png`}
+              width={1200}
+              height={900}
+            />,
+            <Image
+              unoptimized
+              loading="eager"
+              src={`/images/projects/vercel/004.png`}
+              width={1200}
+              height={900}
+            />,
+            <Image
+              unoptimized
+              loading="eager"
+              src={`/images/projects/vercel/005.png`}
+              width={1200}
+              height={900}
+            />,
+            <Image
+              unoptimized
+              loading="eager"
+              src={`/images/projects/vercel/006.png`}
               width={1200}
               height={900}
             />,
@@ -167,7 +195,7 @@ const Homepage = () => {
             title: "Awarded",
             image: (
               <Image
-                quality={98}
+                unoptimized
                 loading="eager"
                 src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551067289/www/works/zeit/awards.png`}
                 width={680 / 2}
@@ -193,28 +221,28 @@ const Homepage = () => {
           cta="Visit Site"
           images={[
             <Image
-              quality={98}
+              unoptimized
               loading="eager"
               src={`/images/projects/conf/001.png`}
               width={1112}
               height={742}
             />,
             <Image
-              quality={98}
+              unoptimized
               loading="eager"
               src={`/images/projects/conf/002.png`}
               width={1112}
               height={742}
             />,
             <Image
-              quality={98}
+              unoptimized
               loading="eager"
               src={`/images/projects/conf/003.png`}
               width={1112}
               height={742}
             />,
           ]}
-          visitLink="https://vercel.com"          
+          visitLink="https://vercel.com"
         />
         <Project
           company="NOW"
@@ -222,21 +250,21 @@ const Homepage = () => {
           cta="Get App"
           images={[
             <Image
-              quality={98}
+              unoptimized
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
               width={1376 / 2}
               height={1196 / 2}
             />,
             <Image
-              quality={98}
+              unoptimized
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
               width={1376 / 2}
               height={1196 / 2}
             />,
             <Image
-              quality={98}
+              unoptimized
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
               width={1376 / 2}
@@ -317,18 +345,11 @@ const Homepage = () => {
           cta="Get App"
           images={[
             <Image
-              quality={98}
+              unoptimized
               loading="eager"
               src={`/images/projects/terminal/001.png`}
               width={1112}
               height={897}
-            />,
-            <Image
-              quality={98}
-              loading="eager"
-              src={`/images/projects/terminal/002.png`}
-              width={1112}
-              height={797}
             />,
           ]}
           visitLink="https://hyper.is"
@@ -394,25 +415,11 @@ const Homepage = () => {
         />
         <Project
           company="SHARELOCK"
-          category="Product"
+          category="Product Design"
           cta="Try It Now"
           images={[
             <Image
-              quality={98}
-              loading="eager"
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419158/www/works/auth0/sharelock-io.png`}
-              width={1240 / 2}
-              height={876 / 2}
-            />,
-            <Image
-              quality={98}
-              loading="eager"
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419158/www/works/auth0/sharelock-io.png`}
-              width={1240 / 2}
-              height={876 / 2}
-            />,
-            <Image
-              quality={98}
+              unoptimized
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419158/www/works/auth0/sharelock-io.png`}
               width={1240 / 2}
@@ -449,21 +456,7 @@ const Homepage = () => {
           cta="Try It Now"
           images={[
             <Image
-              quality={98}
-              loading="eager"
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551337683/www/works/auth0/auth0-guardian.png`}
-              width={1536 / 2}
-              height={1668 / 2}
-            />,
-            <Image
-              quality={98}
-              loading="eager"
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551337683/www/works/auth0/auth0-guardian.png`}
-              width={1536 / 2}
-              height={1668 / 2}
-            />,
-            <Image
-              quality={98}
+              unoptimized
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551337683/www/works/auth0/auth0-guardian.png`}
               width={1536 / 2}
