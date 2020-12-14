@@ -165,6 +165,7 @@ p {
 @media screen and (max-width: 576px) {
   h1 {
     font-size: 22vw;
+    letter-spacing: -5px;
   }
   .wrapper {
     max-width: 100%;
