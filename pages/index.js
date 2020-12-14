@@ -148,32 +148,18 @@ const Homepage = () => {
           cta="Visit Site"
           images={[
             <Image
-              quality={95}
+              quality={98}
               loading="eager"
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
-              width={2800 / 2.25}
-              height={2102 / 2.25}
+              src={`/images/projects/vercel/001.png`}
+              width={1200}
+              height={900}
             />,
             <Image
-              quality={95}
+              quality={98}
               loading="eager"
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
-              width={2800 / 2.25}
-              height={2102 / 2.25}
-            />,
-            <Image
-              quality={95}
-              loading="eager"
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
-              width={2800 / 2.25}
-              height={2102 / 2.25}
-            />,
-            <Image
-              quality={95}
-              loading="eager"
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
-              width={2800 / 2.25}
-              height={2102 / 2.25}
+              src={`/images/projects/vercel/002.png`}
+              width={1200}
+              height={900}
             />,
           ]}
           visitLink="https://vercel.com"
@@ -181,7 +167,7 @@ const Homepage = () => {
             title: "Awarded",
             image: (
               <Image
-                quality={95}
+                quality={98}
                 loading="eager"
                 src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551067289/www/works/zeit/awards.png`}
                 width={680 / 2}
@@ -202,26 +188,55 @@ const Homepage = () => {
           }}
         />
         <Project
+          company="Next.JS"
+          category="Conf"
+          cta="Visit Site"
+          images={[
+            <Image
+              quality={98}
+              loading="eager"
+              src={`/images/projects/conf/001.png`}
+              width={1112}
+              height={742}
+            />,
+            <Image
+              quality={98}
+              loading="eager"
+              src={`/images/projects/conf/002.png`}
+              width={1112}
+              height={742}
+            />,
+            <Image
+              quality={98}
+              loading="eager"
+              src={`/images/projects/conf/003.png`}
+              width={1112}
+              height={742}
+            />,
+          ]}
+          visitLink="https://vercel.com"          
+        />
+        <Project
           company="NOW"
           category="Desktop"
           cta="Get App"
           images={[
             <Image
-              quality={95}
+              quality={98}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
               width={1376 / 2}
               height={1196 / 2}
             />,
             <Image
-              quality={95}
+              quality={98}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
               width={1376 / 2}
               height={1196 / 2}
             />,
             <Image
-              quality={95}
+              quality={98}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
               width={1376 / 2}
@@ -302,25 +317,18 @@ const Homepage = () => {
           cta="Get App"
           images={[
             <Image
-              quality={95}
+              quality={98}
               loading="eager"
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419978/www/works/zeit/hyper-app.png`}
-              width={2192 / 2}
-              height={1774 / 2}
+              src={`/images/projects/terminal/001.png`}
+              width={1112}
+              height={897}
             />,
             <Image
-              quality={95}
+              quality={98}
               loading="eager"
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419978/www/works/zeit/hyper-app.png`}
-              width={2192 / 2}
-              height={1774 / 2}
-            />,
-            <Image
-              quality={95}
-              loading="eager"
-              src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419978/www/works/zeit/hyper-app.png`}
-              width={2192 / 2}
-              height={1774 / 2}
+              src={`/images/projects/terminal/002.png`}
+              width={1112}
+              height={797}
             />,
           ]}
           visitLink="https://hyper.is"
@@ -390,21 +398,21 @@ const Homepage = () => {
           cta="Try It Now"
           images={[
             <Image
-              quality={95}
+              quality={98}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419158/www/works/auth0/sharelock-io.png`}
               width={1240 / 2}
               height={876 / 2}
             />,
             <Image
-              quality={95}
+              quality={98}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419158/www/works/auth0/sharelock-io.png`}
               width={1240 / 2}
               height={876 / 2}
             />,
             <Image
-              quality={95}
+              quality={98}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419158/www/works/auth0/sharelock-io.png`}
               width={1240 / 2}
@@ -441,21 +449,21 @@ const Homepage = () => {
           cta="Try It Now"
           images={[
             <Image
-              quality={95}
+              quality={98}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551337683/www/works/auth0/auth0-guardian.png`}
               width={1536 / 2}
               height={1668 / 2}
             />,
             <Image
-              quality={95}
+              quality={98}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551337683/www/works/auth0/auth0-guardian.png`}
               width={1536 / 2}
               height={1668 / 2}
             />,
             <Image
-              quality={95}
+              quality={98}
               loading="eager"
               src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551337683/www/works/auth0/auth0-guardian.png`}
               width={1536 / 2}
