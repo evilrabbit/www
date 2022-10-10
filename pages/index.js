@@ -16,11 +16,11 @@ export default () => (
   	<meta name="twitter:site" content="@evilrabbit_" />
   	<meta name="twitter:creator" content="@evilrabbit_" />
   	<meta name="twitter:title" content="Evil Rabbit" />
-  	<meta name="twitter:description" content="Head of Design at Vercel" />
+  	<meta name="twitter:description" content="Principal Brand Designer at Vercel" />
   	<meta name="twitter:image" content="https://dev.evilrabb.it/static/og-image.png" />
   	<meta property="og:title" content="Evil Rabbit" />
   	<meta property="og:type" content="website" />
-  	<meta property="og:description" content="Head of Design at Vercel" />
+  	<meta property="og:description" content="Principal Brand Designer at Vercel" />
   	<meta property="og:url" content="https://dev.evilrabb.it" />
   	<meta property="og:image" content="https://dev.evilrabb.it/static/og-image.png" />
   	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -29,7 +29,7 @@ export default () => (
     <Header />
     <section className="intro">
       <h1>Hi, I'm <span className="line-through"><b>Nicolás Garro</b>, a.k.a</span> <b>Evil Rabbit.</b></h1>
-      <h3>Head of Design at <b>Vercel</b></h3>
+      <h3>Principal Brand Designer at <b>Vercel</b></h3>
       <div className="line"></div>
     </section>
     <section className="project">
