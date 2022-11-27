@@ -41,10 +41,10 @@ export default () => (
       <div className="line"></div>
     </section>
     <section className="intro">
-    <h3><Link href="https://elliot.store/"><a target="_blank">Elliot</a></Link> is a no-code ecommerce platform that allows anyone to <b>instantly setup, sell, and ship</b> to 130+ countries with no technical knowledge required. <Link href="https://zeit.co/"><a target="_blank">ZEIT</a></Link> is teaming up with Elliot to provide the best hosting experience to their customers who want to modify their store through an easy-to-modify template package. 
+    <h3><Link href="https://elliot.store/"><a target="_blank">Elliot</a></Link> is a no-code ecommerce platform that allows anyone to <b>instantly setup, sell, and ship</b> to 130+ countries with no technical knowledge required. <Link href="https://vercel.com/"><a target="_blank">Vercel</a></Link> is teaming up with Elliot to provide the best hosting experience to their customers who want to modify their store through an easy-to-modify template package. 
     <br />
     <br />
-    ZEIT is also working with Elliot to provide a better experience to their no-code customers, so that stores are instantly accessible from anywhere in the world through a world-class CDN.
+    Vercel is also working with Elliot to provide a better experience to their no-code customers, so that stores are instantly accessible from anywhere in the world through a world-class CDN.
 
     Elliot asked me to help choose a winner for their light-mode competition, and I am happy to select <Link href="https://twitter.com/iakshatmittal"><a target="_blank">Akshat Mittal</a></Link> for creating a beautiful, on-brand light theme.</h3>
     </section>
