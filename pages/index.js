@@ -9,6 +9,7 @@ export default () => (
       <title>Evil Rabbit</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="shortcut icon" href="/static/favicon.png"/>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
       <meta name="theme-color" content="white" />
   	<meta name="twitter:card" content="summary_large_image" />
@@ -450,7 +451,7 @@ well-known apps such as: <Link href="https://code.visualstudio.com/" legacyBehav
         color: #FFF;
       }
       body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
         margin: 0;
       }
     `}</style>
