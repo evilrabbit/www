@@ -9,7 +9,6 @@ export default () => (
       <title>Evil Rabbit</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="shortcut icon" href="/static/favicon.png"/>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
       <meta name="theme-color" content="white" />
   	<meta name="twitter:card" content="summary_large_image" />
@@ -37,7 +36,7 @@ export default () => (
         <div className="wrapper">
           <h4>Vercel</h4>
           <h2><b>Website</b></h2>
-          <Link href="https://vercel.com"><a target="_blank">View Site</a></Link>
+          <Link href="https://vercel.com" legacyBehavior><a target="_blank">View Site</a></Link>
           <Image
             src={`https://res.cloudinary.com/evilrabbit/image/upload/v1550905163/www/works/zeit/site.png`}
             width={2800/2.25}
@@ -55,7 +54,7 @@ export default () => (
             </div>
             <div className="award">
               <h3><b>Awarded</b></h3>
-              <p><Link href="https://cssdesignawards.com/"><a target="_blank">CSSDA</a></Link>: Official Public Vote Award Certificate of Excellence:
+              <p><Link href="https://cssdesignawards.com/" legacyBehavior><a target="_blank">CSSDA</a></Link>: Official Public Vote Award Certificate of Excellence:
     Innovation, UX Design and UI Design</p>
             </div>
             <div className="date">
@@ -69,7 +68,7 @@ export default () => (
           <div className="meta">
             <h4>NOW</h4>
             <h2><b>Desktop</b></h2>
-            <Link href="https://zeit.co/download"><a target="_blank">Get App</a></Link>
+            <Link href="https://zeit.co/download" legacyBehavior><a target="_blank">Get App</a></Link>
           </div>
           <Image
             src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551068030/www/works/zeit/now-desktop.png`}
@@ -92,9 +91,9 @@ export default () => (
             </div>
             <div className="award">
               <h3><b>Featured</b></h3>
-              <p>The application was highlighted on <Link href="https://electronjs.org/"><a target="_blank">Electron</a></Link> front page along with other
-well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="_blank">Visual Studio Code</a></Link>, <Link href="https://www.figma.com"><a target="_blank">Figma</a></Link>,{` `}
-<Link href="https://www.skype.com"><a target="_blank">Skype</a></Link>, <Link href="https://www.slack.com"><a target="_blank">Slack</a></Link>, <Link href="https://discordapp.com/"><a target="_blank">Discord</a></Link>, and many more.</p>
+              <p>The application was highlighted on <Link href="https://electronjs.org/" legacyBehavior><a target="_blank">Electron</a></Link> front page along with other
+well-known apps such as: <Link href="https://code.visualstudio.com/" legacyBehavior><a target="_blank">Visual Studio Code</a></Link>, <Link href="https://www.figma.com" legacyBehavior><a target="_blank">Figma</a></Link>,{` `}
+<Link href="https://www.skype.com" legacyBehavior><a target="_blank">Skype</a></Link>, <Link href="https://www.slack.com" legacyBehavior><a target="_blank">Slack</a></Link>, <Link href="https://discordapp.com/" legacyBehavior><a target="_blank">Discord</a></Link>, and many more.</p>
             </div>
             <div className="date">
             <p>Since 2017</p>
@@ -107,7 +106,7 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
           <div className="meta">
             <h4>HYPER</h4>
             <h2><b>Terminal</b></h2>
-            <Link href="https://hyper.is"><a target="_blank">Get App</a></Link>
+            <Link href="https://hyper.is" legacyBehavior><a target="_blank">Get App</a></Link>
           </div>
           <Image
             src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419978/www/works/zeit/hyper-app.png`}
@@ -148,9 +147,9 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
             </div>
             <div className="award">
               <h3><b>Featured</b></h3>
-              <p>The application was highlighted on <Link href="https://electronjs.org/"><a target="_blank">Electron</a></Link> front page along with other
-well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="_blank">Visual Studio Code</a></Link>, <Link href="https://www.figma.com"><a target="_blank">Figma</a></Link>,{` `}
-<Link href="https://www.skype.com"><a target="_blank">Skype</a></Link>, <Link href="https://www.slack.com"><a target="_blank">Slack</a></Link>, <Link href="https://discordapp.com/"><a target="_blank">Discord</a></Link>, and many more.</p>
+              <p>The application was highlighted on <Link href="https://electronjs.org/" legacyBehavior><a target="_blank">Electron</a></Link> front page along with other
+well-known apps such as: <Link href="https://code.visualstudio.com/" legacyBehavior><a target="_blank">Visual Studio Code</a></Link>, <Link href="https://www.figma.com" legacyBehavior><a target="_blank">Figma</a></Link>,{` `}
+<Link href="https://www.skype.com" legacyBehavior><a target="_blank">Skype</a></Link>, <Link href="https://www.slack.com" legacyBehavior><a target="_blank">Slack</a></Link>, <Link href="https://discordapp.com/" legacyBehavior><a target="_blank">Discord</a></Link>, and many more.</p>
             </div>
             <div className="date">
             <p>Since 2017</p>
@@ -163,7 +162,7 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
           <div className="meta">
             <h4>SHARELOCK</h4>
             <h2><b>Product</b></h2>
-            <Link href="https://sharelock.io/"><a target="_blank">Try It Now</a></Link>
+            <Link href="https://sharelock.io/" legacyBehavior><a target="_blank">Try It Now</a></Link>
           </div>
           <Image
             src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551419158/www/works/auth0/sharelock-io.png`}
@@ -180,7 +179,7 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
             </div>
             <div className="award">
               <h3><b>Featured</b></h3>
-              <p>The app was featured on <Link href="https://news.ycombinator.com/"><a target="_blank">Hacker News</a></Link> front page.</p>
+              <p>The app was featured on <Link href="https://news.ycombinator.com/" legacyBehavior><a target="_blank">Hacker News</a></Link> front page.</p>
             </div>
             <div className="date">
             <p>FEB 2015</p>
@@ -193,7 +192,7 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
           <div className="meta">
             <h4>GUARDIAN</h4>
             <h2><b>Product</b></h2>
-            <Link href="https://auth0.com/multifactor-authentication"><a target="_blank">Try It Now</a></Link>
+            <Link href="https://auth0.com/multifactor-authentication" legacyBehavior><a target="_blank">Try It Now</a></Link>
           </div>
           <Image
             src={`https://res.cloudinary.com/evilrabbit/image/upload/v1551337683/www/works/auth0/auth0-guardian.png`}
@@ -451,7 +450,7 @@ well-known apps such as: <Link href="https://code.visualstudio.com/"><a target="
         color: #FFF;
       }
       body {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
         margin: 0;
       }
     `}</style>

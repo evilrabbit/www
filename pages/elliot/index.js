@@ -41,19 +41,21 @@ export default () => (
       <div className="line"></div>
     </section>
     <section className="intro">
-    <h3><Link href="https://elliot.store/"><a target="_blank">Elliot</a></Link> is a no-code ecommerce platform that allows anyone to <b>instantly setup, sell, and ship</b> to 130+ countries with no technical knowledge required. <Link href="https://vercel.com/"><a target="_blank">Vercel</a></Link> is teaming up with Elliot to provide the best hosting experience to their customers who want to modify their store through an easy-to-modify template package. 
+    <h3><Link href="https://elliot.store/" legacyBehavior><a target="_blank">Elliot</a></Link> is a no-code ecommerce platform that allows anyone to <b>instantly setup, sell, and ship</b> to 130+ countries with no technical knowledge required. <Link href="https://vercel.com/" legacyBehavior><a target="_blank">Vercel</a></Link> is teaming up with Elliot to provide the best hosting experience to their customers who want to modify their store through an easy-to-modify template package. 
     <br />
     <br />
     Vercel is also working with Elliot to provide a better experience to their no-code customers, so that stores are instantly accessible from anywhere in the world through a world-class CDN.
 
-    Elliot asked me to help choose a winner for their light-mode competition, and I am happy to select <Link href="https://twitter.com/iakshatmittal"><a target="_blank">Akshat Mittal</a></Link> for creating a beautiful, on-brand light theme.</h3>
+    Elliot asked me to help choose a winner for their light-mode competition, and I am happy to select <Link href="https://twitter.com/iakshatmittal" legacyBehavior><a target="_blank">Akshat Mittal</a></Link> for creating a beautiful, on-brand light theme.</h3>
     </section>
     <section className="project">
       <div className="winner">
         <div className="wrapper">
           <h3><b>Winner 🎉</b></h3>
           <h2><b>Akshat Mittal</b></h2>
-          <Link href="https://twitter.com/sir_gee_ohhhhh/status/1200135866116694017?s=20"><a target="_blank">View Proposal</a></Link>
+          <Link
+            href="https://twitter.com/sir_gee_ohhhhh/status/1200135866116694017?s=20"
+            legacyBehavior><a target="_blank">View Proposal</a></Link>
           <Image
             src={`https://res.cloudinary.com/evilrabbit/image/upload/v1575432066/www/contests/elliot/akshat-mittal.png`}
             width={2640/2}
@@ -65,7 +67,9 @@ export default () => (
       <div className="submissions">
         <div className="wrapper">
           <h3><b>Submissions</b></h3>
-          <Link href="https://twitter.com/sir_gee_ohhhhh/status/1200131403805085696?s=21"><a target="_blank">View All</a></Link>
+          <Link
+            href="https://twitter.com/sir_gee_ohhhhh/status/1200131403805085696?s=21"
+            legacyBehavior><a target="_blank">View All</a></Link>
 
           <div className="submissions-container">
             <div className="submission">

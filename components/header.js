@@ -9,12 +9,12 @@ export default () => (
   </svg>
       </div>
       <div className="navigation">
-        <Link href="https://twitter.com/evilrabbit_"><a target="_blank">Twitter</a></Link>
-        <Link href="https://github.com/evilrabbit"><a target="_blank">GitHub</a></Link>
-        <Link href="https://dribbble.com/evilrabbit"><a target="_blank">Dribbble</a></Link>
+        <Link href="https://twitter.com/evilrabbit_" legacyBehavior><a target="_blank">Twitter</a></Link>
+        <Link href="https://github.com/evilrabbit" legacyBehavior><a target="_blank">GitHub</a></Link>
+        <Link href="https://dribbble.com/evilrabbit" legacyBehavior><a target="_blank">Dribbble</a></Link>
       </div>
       <div className="theme">
-        <p>2022</p>
+        <p>2023</p>
       </div>
     </div>
     <style jsx>{`
